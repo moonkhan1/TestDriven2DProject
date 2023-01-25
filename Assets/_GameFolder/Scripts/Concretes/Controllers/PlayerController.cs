@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TestDriven.Inputs;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour, IPlayerController
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     void Awake() 
     {
+        InputReader = new InputReader();
         _mover = new MoveWithTransform(this);
         
     }
