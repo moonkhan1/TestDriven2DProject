@@ -5,16 +5,20 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour, IPlayerController
 {
     public IInputReader InputReader {get;set;}
+    IMover _mover;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake() 
     {
+        _mover = new MoveWithTransform(this);
         
+    }
+     void Update() 
+    {
+        _mover.TakeInputAction();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void FixedUpdate() {
+        _mover.MoveAction();
     }
 }

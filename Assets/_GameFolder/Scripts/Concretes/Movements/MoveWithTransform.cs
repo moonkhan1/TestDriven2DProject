@@ -7,6 +7,7 @@ public class MoveWithTransform : IMover
     readonly IPlayerController _playerController;
     readonly Transform _transform;
     float _horizontalInput = 0f;
+    float _moveSpeed = 1f;
     public MoveWithTransform(IPlayerController playerController)
     {
         _playerController = playerController;
@@ -19,6 +20,6 @@ public class MoveWithTransform : IMover
 
     public void TakeInputAction()
     {
-        _transform.Translate(Vector3.right*_horizontalInput);
+        _transform.Translate(Vector3.right *_horizontalInput * (_moveSpeed * Time.deltaTime));
     }
 }
