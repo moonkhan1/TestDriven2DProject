@@ -20,6 +20,6 @@ public class MoveWithTransform : IMover
 
     public void TakeInputAction()
     {
-        _transform.Translate(Vector3.right *_horizontalInput * (_moveSpeed * Time.deltaTime));
+        _transform.Translate(Vector3.right *_horizontalInput * (_playerController.Stats.MoveSpeed * Time.deltaTime));
     }
 }

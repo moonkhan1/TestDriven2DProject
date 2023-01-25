@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using NSubstitute;
+using TestDriven.Abstracts.Stats;
 
 namespace MovementTests
 {
@@ -14,6 +15,8 @@ namespace MovementTests
             GameObject gameObject = new GameObject();
             playerController.transform.Returns(gameObject.transform);
             playerController.InputReader = Substitute.For<IInputReader>();
+            playerController.Stats.Returns(Substitute.For<IPlayerStats>());
+            playerController.Stats.MoveSpeed.Returns(5f);
 
             return playerController;
         }
