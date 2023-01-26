@@ -12,17 +12,19 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     public IPlayerStats Stats => _playerStats;
 
-    IMover _mover;
 
+    IMover _mover;
+    IFlip _flip;
     void Awake() 
     {
         InputReader = new InputReader();
         _mover = new MoveWithTransform(this);
-        
+        _flip = new PlayerFlipWithScale(this);
     }
      void Update() 
     {
         _mover.TakeInputAction();
+        _flip.FlipAction();
     }
 
     // Update is called once per frame

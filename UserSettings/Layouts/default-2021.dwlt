@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 7.2000003
-    y: 50.4
-    width: 1521.6
-    height: 766.4
+    x: 0
+    y: 43.2
+    width: 1536
+    height: 780.8
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Game
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -39,12 +39,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 788
+    x: 789.6
     y: 0
-    width: 373.59998
-    height: 424
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 420.80005
+    height: 432.8
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -69,12 +69,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1521.6
-    height: 716.4
+    width: 1536
+    height: 730.8
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 118
+  controlID: 56
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,12 +90,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1161.6
+    x: 1210.4
     y: 0
-    width: 360
-    height: 716.4
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 325.59998
+    height: 730.8
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 17}
@@ -119,10 +119,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 287.2
-    height: 424
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 386.4
+    height: 432.8
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -138,23 +138,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 424
-    width: 1161.6
-    height: 292.40002
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+    y: 432.8
+    width: 1210.4
+    height: 298
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 21}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,8 +175,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1521.6
-    height: 766.4
+    width: 1536
+    height: 780.8
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -200,7 +200,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1521.6
+    width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -221,8 +221,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 746.4
-    width: 1521.6
+    y: 760.8
+    width: 1536
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -245,12 +245,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1161.6
-    height: 716.4
+    width: 1210.4
+    height: 730.8
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 144
+  controlID: 57
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,12 +271,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1161.6
-    height: 424
+    width: 1210.4
+    height: 432.8
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 145
+  controlID: 112
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -292,10 +292,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 287.2
+    x: 386.4
     y: 0
-    width: 500.8
-    height: 424
+    width: 403.19998
+    height: 432.8
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
@@ -325,21 +325,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1168.8
-    y: 80.8
-    width: 359
-    height: 695.4
+    x: 1210.4
+    y: 73.6
+    width: 324.59998
+    height: 709.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 183
+    ID: 700
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 468.8
-    - 156
+    - 480
+    - 160
     relativeSizes:
     - 0.75
     - 0.25
@@ -349,7 +349,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 624.8
+    lastTotalSize: 640
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -357,7 +357,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 13}
     m_NewResultList:
@@ -365,8 +365,8 @@ MonoBehaviour:
       uniqueId: '[TestDriven2DProject][suite]'
       name: TestDriven2DProject
       fullName: TestDriven2DProject
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 30.88939
       messages: 
       output: 
       stacktrace: 
@@ -377,12 +377,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
-      uniqueId: '[PlayModeTest][C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/PlayModeTest.dll][suite]'
+    - id: 1023
+      uniqueId: '[PlayModeTest.dll][suite]'
       name: PlayModeTest.dll
       fullName: C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/PlayModeTest.dll
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 30.748892
       messages: 
       output: 
       stacktrace: 
@@ -391,14 +391,246 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1000
+      parentId: 1015
       parentUniqueId: '[TestDriven2DProject][suite]'
+    - id: 1024
+      uniqueId: PlayModeTest.dll/[PlayModeTest][MovementTests][suite]
+      name: MovementTests
+      fullName: MovementTests
+      resultStatus: 1
+      duration: 30.722822
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1023
+      parentUniqueId: '[PlayModeTest.dll][suite]'
+    - id: 1070
+      uniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_flip_playmode][suite]
+      name: player_flip_playmode
+      fullName: MovementTests.player_flip_playmode
+      resultStatus: 1
+      duration: 18.473103
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1084
+      parentUniqueId: PlayModeTest.dll/[PlayModeTest][MovementTests][suite]
+    - id: 1076
+      uniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero][suite]
+      name: player_scale_x_flip_when_value_become_zero
+      fullName: MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero
+      resultStatus: 1
+      duration: 12.353013
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1070
+      parentUniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_flip_playmode][suite]
+    - id: 1074
+      uniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/player_scale_x_flip_when_value_become_zero/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero(1.0f)]
+      name: player_scale_x_flip_when_value_become_zero(1.0f)
+      fullName: MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero(1.0f)
+      resultStatus: 1
+      duration: 6.283012
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1076
+      parentUniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero][suite]
+    - id: 1075
+      uniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/player_scale_x_flip_when_value_become_zero/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero(-1.0f)]
+      name: player_scale_x_flip_when_value_become_zero(-1.0f)
+      fullName: MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero(-1.0f)
+      resultStatus: 1
+      duration: 6.057347
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1076
+      parentUniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero][suite]
+    - id: 1073
+      uniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one][suite]
+      name: player_scale_x_flip_with_one_or_minus_one
+      fullName: MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one
+      resultStatus: 1
+      duration: 6.1140676
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1070
+      parentUniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_flip_playmode][suite]
+    - id: 1071
+      uniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/player_scale_x_flip_with_one_or_minus_one/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one(1.0f)]
+      name: player_scale_x_flip_with_one_or_minus_one(1.0f)
+      fullName: MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one(1.0f)
+      resultStatus: 1
+      duration: 3.053387
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1073
+      parentUniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one][suite]
+    - id: 1072
+      uniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/player_scale_x_flip_with_one_or_minus_one/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one(-1.0f)]
+      name: player_scale_x_flip_with_one_or_minus_one(-1.0f)
+      fullName: MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one(-1.0f)
+      resultStatus: 1
+      duration: 3.055999
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1073
+      parentUniqueId: PlayModeTest.dll/MovementTests/player_flip_playmode/[PlayModeTest][MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one][suite]
+    - id: 1019
+      uniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_movement_playmodetest][suite]
+      name: player_movement_playmodetest
+      fullName: MovementTests.player_movement_playmodetest
+      resultStatus: 1
+      duration: 12.246147
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: PlayModeTest.dll/[PlayModeTest][MovementTests][suite]
+    - id: 1009
+      uniqueId: PlayModeTest.dll/MovementTests/player_movement_playmodetest/[PlayModeTest][MovementTests.player_movement_playmodetest.player_move_left_greater_than_start_position]
+      name: player_move_left_greater_than_start_position
+      fullName: MovementTests.player_movement_playmodetest.player_move_left_greater_than_start_position
+      resultStatus: 1
+      duration: 3.060297
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_movement_playmodetest][suite]
+    - id: 1008
+      uniqueId: PlayModeTest.dll/MovementTests/player_movement_playmodetest/[PlayModeTest][MovementTests.player_movement_playmodetest.player_move_right_greater_than_start_position]
+      name: player_move_right_greater_than_start_position
+      fullName: MovementTests.player_movement_playmodetest.player_move_right_greater_than_start_position
+      resultStatus: 1
+      duration: 3.0576384
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_movement_playmodetest][suite]
+    - id: 1022
+      uniqueId: PlayModeTest.dll/MovementTests/player_movement_playmodetest/[PlayModeTest][MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position][suite]
+      name: player_move_right_or_left_different_from_start_position
+      fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position
+      resultStatus: 1
+      duration: 6.1235747
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1019
+      parentUniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_movement_playmodetest][suite]
+    - id: 1020
+      uniqueId: PlayModeTest.dll/MovementTests/player_movement_playmodetest/player_move_right_or_left_different_from_start_position/[PlayModeTest][MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position(1.0f)]
+      name: player_move_right_or_left_different_from_start_position(1.0f)
+      fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position(1.0f)
+      resultStatus: 1
+      duration: 3.0614374
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: PlayModeTest.dll/MovementTests/player_movement_playmodetest/[PlayModeTest][MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position][suite]
+    - id: 1021
+      uniqueId: PlayModeTest.dll/MovementTests/player_movement_playmodetest/player_move_right_or_left_different_from_start_position/[PlayModeTest][MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position(-1.0f)]
+      name: player_move_right_or_left_different_from_start_position(-1.0f)
+      fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position(-1.0f)
+      resultStatus: 1
+      duration: 3.0579572
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: PlayModeTest.dll/MovementTests/player_movement_playmodetest/[PlayModeTest][MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position][suite]
     - id: 1001
       uniqueId: PlayModeTest.dll/[PlayModeTest][play_test_script][suite]
       name: play_test_script
       fullName: play_test_script
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.017676
       messages: 
       output: 
       stacktrace: 
@@ -413,8 +645,8 @@ MonoBehaviour:
       uniqueId: PlayModeTest.dll/play_test_script/[PlayModeTest][play_test_script.play_test_scriptSimplePasses]
       name: play_test_scriptSimplePasses
       fullName: play_test_script.play_test_scriptSimplePasses
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0018385
       messages: 
       output: 
       stacktrace: 
@@ -430,8 +662,8 @@ MonoBehaviour:
       uniqueId: PlayModeTest.dll/play_test_script/[PlayModeTest][play_test_script.play_test_scriptWithEnumeratorPasses]
       name: play_test_scriptWithEnumeratorPasses
       fullName: play_test_script.play_test_scriptWithEnumeratorPasses
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0107308
       messages: 
       output: 
       stacktrace: 
@@ -443,13 +675,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayModeTest.dll/[PlayModeTest][play_test_script][suite]
-    m_ResultText: 
+    m_ResultText: player_movement_playmodetest (12.246s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: b1c7829a0dd4460cd6da2a66ffffff7f
+      m_SelectedIDs: cd9c155c
+      m_LastClickedID: 1544920269
+      m_ExpandedIDs: cf292f8cb1c7829a9741aee74172c1eb0dd4460ccd9c155cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -484,7 +716,7 @@ MonoBehaviour:
       name: TestDriven2DProject
       fullName: TestDriven2DProject
       resultStatus: 1
-      duration: 0.136209
+      duration: 0.2941241
       messages: 
       output: 
       stacktrace: 
@@ -500,7 +732,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.1123212
+      duration: 0.2555257
       messages: 
       output: 
       stacktrace: 
@@ -516,7 +748,7 @@ MonoBehaviour:
       name: first_edit_test_script
       fullName: first_edit_test_script
       resultStatus: 1
-      duration: 0.0168401
+      duration: 0.0351433
       messages: 
       output: 
       stacktrace: 
@@ -532,7 +764,7 @@ MonoBehaviour:
       name: first_edit_test_scriptSimplePasses
       fullName: first_edit_test_script.first_edit_test_scriptSimplePasses
       resultStatus: 1
-      duration: 0.0000811
+      duration: 0.006062
       messages: 
       output: 
       stacktrace: 
@@ -549,7 +781,7 @@ MonoBehaviour:
       name: first_edit_test_scriptWithEnumeratorPasses
       fullName: first_edit_test_script.first_edit_test_scriptWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0161131
+      duration: 0.0171637
       messages: 
       output: 
       stacktrace: 
@@ -561,12 +793,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][first_edit_test_script][suite]
-    - id: 1004
-      uniqueId: Tests.dll/[Tests][player_movement][suite]
-      name: player_movement
-      fullName: player_movement
+    - id: 1011
+      uniqueId: Tests.dll/[Tests][MovementTests][suite]
+      name: MovementTests
+      fullName: MovementTests
       resultStatus: 1
-      duration: 0.1113685
+      duration: 0.2188492
       messages: 
       output: 
       stacktrace: 
@@ -575,58 +807,35 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1006
+      parentId: 1010
       parentUniqueId: '[Tests][C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1008
-      uniqueId: Tests.dll/player_movement/[Tests][player_movement.move_10_meters_left_greater_than_start_position]
-      name: move_10_meters_left_greater_than_start_position
-      fullName: player_movement.move_10_meters_left_greater_than_start_position
+    - id: 1004
+      uniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_flip][suite]
+      name: player_flip
+      fullName: MovementTests.player_flip
       resultStatus: 1
-      duration: 0.0071931
+      duration: 0.1709509
       messages: 
-      output: 'Player Start Position => (0.00, 0.00, 0.00)
-
-        Player End Position
-        => (-10.00, 0.00, 0.00)
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
 
 '
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/[Tests][player_movement][suite]
-    - id: 1006
-      uniqueId: Tests.dll/player_movement/[Tests][player_movement.move_10_meters_right_greater_than_start_position]
-      name: move_10_meters_right_greater_than_start_position
-      fullName: player_movement.move_10_meters_right_greater_than_start_position
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: Tests.dll/[Tests][MovementTests][suite]
+    - id: 1010
+      uniqueId: Tests.dll/MovementTests/player_flip/[Tests][MovementTests.player_flip.player_scale_x_flip_when_value_become_zero][suite]
+      name: player_scale_x_flip_when_value_become_zero
+      fullName: MovementTests.player_flip.player_scale_x_flip_when_value_become_zero
       resultStatus: 1
-      duration: 0.0016793
-      messages: 
-      output: 'Player Start Position => (0.00, 0.00, 0.00)
-
-        Player End Position
-        => (10.00, 0.00, 0.00)
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/[Tests][player_movement][suite]
-    - id: 1007
-      uniqueId: Tests.dll/player_movement/[Tests][player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
-      name: move_10_meters_right_or_left_different_from_start_position
-      fullName: player_movement.move_10_meters_right_or_left_different_from_start_position
-      resultStatus: 1
-      duration: 0.1090839
+      duration: 0.1410249
       messages: 
       output: 
       stacktrace: 
@@ -636,20 +845,65 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentId: 1004
-      parentUniqueId: Tests.dll/[Tests][player_movement][suite]
+      parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_flip][suite]
+    - id: 1008
+      uniqueId: Tests.dll/MovementTests/player_flip/player_scale_x_flip_when_value_become_zero/[Tests][MovementTests.player_flip.player_scale_x_flip_when_value_become_zero(1.0f)]
+      name: player_scale_x_flip_when_value_become_zero(1.0f)
+      fullName: MovementTests.player_flip.player_scale_x_flip_when_value_become_zero(1.0f)
+      resultStatus: 1
+      duration: 0.138316
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: Tests.dll/MovementTests/player_flip/[Tests][MovementTests.player_flip.player_scale_x_flip_when_value_become_zero][suite]
+    - id: 1009
+      uniqueId: Tests.dll/MovementTests/player_flip/player_scale_x_flip_when_value_become_zero/[Tests][MovementTests.player_flip.player_scale_x_flip_when_value_become_zero(-1.0f)]
+      name: player_scale_x_flip_when_value_become_zero(-1.0f)
+      fullName: MovementTests.player_flip.player_scale_x_flip_when_value_become_zero(-1.0f)
+      resultStatus: 1
+      duration: 0.0010897
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: Tests.dll/MovementTests/player_flip/[Tests][MovementTests.player_flip.player_scale_x_flip_when_value_become_zero][suite]
+    - id: 1007
+      uniqueId: Tests.dll/MovementTests/player_flip/[Tests][MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one][suite]
+      name: player_scale_x_flip_with_one_or_minus_one
+      fullName: MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one
+      resultStatus: 1
+      duration: 0.0249256
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_flip][suite]
     - id: 1005
-      uniqueId: Tests.dll/player_movement/move_10_meters_right_or_left_different_from_start_position/[Tests][player_movement.move_10_meters_right_or_left_different_from_start_position(1.0f)]
-      name: move_10_meters_right_or_left_different_from_start_position(1.0f)
-      fullName: player_movement.move_10_meters_right_or_left_different_from_start_position(1.0f)
+      uniqueId: Tests.dll/MovementTests/player_flip/player_scale_x_flip_with_one_or_minus_one/[Tests][MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one(1.0f)]
+      name: player_scale_x_flip_with_one_or_minus_one(1.0f)
+      fullName: MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one(1.0f)
       resultStatus: 1
-      duration: 0.0989371
+      duration: 0.0013107
       messages: 
-      output: 'Player Start Position => (0.00, 0.00, 0.00)
-
-        Player End Position
-        => (10.00, 0.00, 0.00)
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -658,18 +912,111 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1007
-      parentUniqueId: Tests.dll/player_movement/[Tests][player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
+      parentUniqueId: Tests.dll/MovementTests/player_flip/[Tests][MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one][suite]
     - id: 1006
-      uniqueId: Tests.dll/player_movement/move_10_meters_right_or_left_different_from_start_position/[Tests][player_movement.move_10_meters_right_or_left_different_from_start_position(-1.0f)]
-      name: move_10_meters_right_or_left_different_from_start_position(-1.0f)
-      fullName: player_movement.move_10_meters_right_or_left_different_from_start_position(-1.0f)
+      uniqueId: Tests.dll/MovementTests/player_flip/player_scale_x_flip_with_one_or_minus_one/[Tests][MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one(-1.0f)]
+      name: player_scale_x_flip_with_one_or_minus_one(-1.0f)
+      fullName: MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one(-1.0f)
       resultStatus: 1
-      duration: 0.0021821
+      duration: 0.0007175
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/MovementTests/player_flip/[Tests][MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one][suite]
+    - id: 1004
+      uniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
+      name: player_movement
+      fullName: MovementTests.player_movement
+      resultStatus: 1
+      duration: 0.0453577
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: Tests.dll/[Tests][MovementTests][suite]
+    - id: 1009
+      uniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_left_greater_than_start_position]
+      name: move_10_meters_left_greater_than_start_position
+      fullName: MovementTests.player_movement.move_10_meters_left_greater_than_start_position
+      resultStatus: 1
+      duration: 0.0113038
       messages: 
       output: 'Player Start Position => (0.00, 0.00, 0.00)
 
         Player End Position
-        => (-10.00, 0.00, 0.00)
+        => (-1.24, 0.00, 0.00)
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
+    - id: 1008
+      uniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_right_greater_than_start_position]
+      name: move_10_meters_right_greater_than_start_position
+      fullName: MovementTests.player_movement.move_10_meters_right_greater_than_start_position
+      resultStatus: 1
+      duration: 0.0032333
+      messages: 
+      output: 'Player Start Position => (0.00, 0.00, 0.00)
+
+        Player End Position
+        => (1.24, 0.00, 0.00)
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
+    - id: 1007
+      uniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
+      name: move_10_meters_right_or_left_different_from_start_position
+      fullName: MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position
+      resultStatus: 1
+      duration: 0.020049
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
+    - id: 1005
+      uniqueId: Tests.dll/MovementTests/player_movement/move_10_meters_right_or_left_different_from_start_position/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position(1.0f)]
+      name: move_10_meters_right_or_left_different_from_start_position(1.0f)
+      fullName: MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position(1.0f)
+      resultStatus: 1
+      duration: 0.0062837
+      messages: 
+      output: 'Player Start Position => (0.00, 0.00, 0.00)
+
+        Player End Position
+        => (1.27, 0.00, 0.00)
 
 '
       stacktrace: 
@@ -680,14 +1027,36 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1007
-      parentUniqueId: Tests.dll/player_movement/[Tests][player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
-    m_ResultText: move_10_meters_right_or_left_different_from_start_position (0.109s)
+      parentUniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
+    - id: 1006
+      uniqueId: Tests.dll/MovementTests/player_movement/move_10_meters_right_or_left_different_from_start_position/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position(-1.0f)]
+      name: move_10_meters_right_or_left_different_from_start_position(-1.0f)
+      fullName: MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position(-1.0f)
+      resultStatus: 1
+      duration: 0.0021506
+      messages: 
+      output: 'Player Start Position => (0.00, 0.00, 0.00)
+
+        Player End Position
+        => (-1.27, 0.00, 0.00)
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
+    m_ResultText: input_value_equal_one_or_minus_one(-1.0f) (0.002s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 73253081
-      m_LastClickedID: -2127551117
-      m_ExpandedIDs: 7325308129b4c6ac915316c70dd4460c3042e90cb9e28373ffffff7f
+      m_SelectedIDs: 6bc544e4
+      m_LastClickedID: -465255061
+      m_ExpandedIDs: 73253081bdd6658629b4c6ac915316c73b0a6ce00dd4460c3042e90c8f82f113b9e28373ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -789,10 +1158,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
-    y: 504.80002
-    width: 1160.6
-    height: 271.40002
+    x: 0
+    y: 506.4
+    width: 1209.4
+    height: 277
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -810,22 +1179,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_GameFolder/Scripts/Abstracts/Movements
+    - Assets/_GameFolder/Scripts/Tests/PlayModeTest
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_GameFolder/Scripts/Abstracts/Movements
+  - Assets/_GameFolder/Scripts/Tests/PlayModeTest
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Ayxan\Desktop\CodeAcedmy\TestDriven2DProject\TestDriven2DProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 120.599976}
-    m_SelectedIDs: 84640000
-    m_LastClickedID: 25732
-    m_ExpandedIDs: 00000000586400005a6400005c6400005e64000060640000626400006464000066640000686400007864000000ca9a3b
+    scrollPos: {x: 0, y: 196.59998}
+    m_SelectedIDs: d4640000
+    m_LastClickedID: 25812
+    m_ExpandedIDs: 0000000076640000786400007a6400007c6400007e64000080640000826400008464000086640000886400008a6400008c6400008e6400009064000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -853,7 +1222,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000586400005a6400005c6400005e6400006064000062640000646400006664000068640000
+    m_ExpandedIDs: 0000000076640000786400007a6400007c6400007e64000080640000826400008464000086640000886400008a6400008c6400008e64000090640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -880,7 +1249,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -929,10 +1298,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1168.8
-    y: 80.8
-    width: 359
-    height: 695.4
+    x: 1210.4
+    y: 73.6
+    width: 324.59998
+    height: 709.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -970,10 +1339,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
-    y: 80.8
-    width: 286.2
-    height: 403
+    x: 0
+    y: 73.6
+    width: 385.4
+    height: 411.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -983,7 +1352,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fcf1ffff26f3ffff3cf4ffffa0f4ffff08f5ffff80f5fffff0f5ffff08f7ffff20f8ffff3cf9fffffcfaffff
+      m_ExpandedIDs: 68e8ffffaee8ffff4cebffff0aecffffb6f2ffff2cf3ffff40f4ffff08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1027,10 +1396,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 294.4
-    y: 80.8
-    width: 498.8
-    height: 403
+    x: 386.4
+    y: 73.6
+    width: 401.19998
+    height: 411.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1254,9 +1623,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.4240632, y: -0.9923518, z: 0.07191546}
+    m_Target: {x: -6.1088305, y: -2.034561, z: -0.06264528}
     speed: 2
-    m_Value: {x: 1.4240632, y: -0.9923518, z: 0.07191546}
+    m_Value: {x: -6.1088305, y: -2.034561, z: -0.06264528}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1307,9 +1676,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.784127
+    m_Target: 14.794354
     speed: 2
-    m_Value: 4.784127
+    m_Value: 14.794354
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1354,10 +1723,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 795.2
-    y: 80.8
-    width: 371.59998
-    height: 403
+    x: 789.60004
+    y: 73.6
+    width: 418.80005
+    height: 411.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1368,7 +1737,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 371.59998, y: 382}
+  m_TargetSize: {x: 418.80005, y: 390.8}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1383,10 +1752,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -148.64
-    m_HBaseRangeMax: 148.64
-    m_VBaseRangeMin: -152.8
-    m_VBaseRangeMax: 152.8
+    m_HBaseRangeMin: -167.52002
+    m_HBaseRangeMax: 167.52002
+    m_VBaseRangeMin: -156.31999
+    m_VBaseRangeMax: 156.31999
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1404,23 +1773,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 371.59998
-      height: 382
+      width: 418.80005
+      height: 390.8
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 185.79999, y: 191}
+    m_Translation: {x: 209.40002, y: 195.4}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -185.79999
-      y: -191
-      width: 371.59998
-      height: 382
+      x: -209.40002
+      y: -195.4
+      width: 418.80005
+      height: 390.8
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 464.49997, y: 503.75}
+  m_LastWindowPixelSize: {x: 523.50006, y: 514.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1446,9 +1815,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
+    x: 27.2
     y: 504.80002
-    width: 1160.6
+    width: 1198.2
     height: 271.40002
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
