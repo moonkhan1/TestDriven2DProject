@@ -66,7 +66,7 @@ namespace MovementTests
             }
 
             //Assert
-            Assert.AreEqual(horizontalInput, playerController.transform.GetChild(0).localScale.x);
+            Assert.AreEqual(firstInputValue, playerController.transform.GetChild(0).localScale.x);
         }
     }
 }
