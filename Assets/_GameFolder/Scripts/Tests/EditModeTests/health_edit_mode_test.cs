@@ -69,10 +69,11 @@ namespace CombatTests
         [TestCase(2)]
         [TestCase(3)]
         [TestCase(5)]
-        public void trigger_event_when_take_damage_many_time(int loopValue)
+        public void trigger_event_when_damage_taken_many_time(int loopValue)
         {
             // Arrange
-            IHealth health = new Health(100);
+            int maxHealth = 100;
+            IHealth health = new Health(maxHealth);
             IAttacker attacker = Substitute.For<IAttacker>();
             int damageLoop = loopValue;
 
@@ -101,11 +102,55 @@ namespace CombatTests
             //Act
             attacker.Damage.Returns(maxHealth + 1);
             string message = string.Empty;
-            health.OnTakeDamage += () => message = "On Dead Event Triggered";
+            health.OnDead += () => message = "On Dead Event Triggered";
             health.TakeDamage(attacker);
 
             //Assert
             Assert.AreNotEqual(string.Empty, message);
+        }
+
+        [Test]
+        public void take_damage_without_triggering_dead_event()
+        {
+            // Arrange
+            int maxHealth = 100;
+            IHealth health = new Health(maxHealth);
+            IAttacker attacker = Substitute.For<IAttacker>();
+            
+            //Act
+            attacker.Damage.Returns(maxHealth / 2);
+            string expectedMessage = "Dead Event Not Triggered";
+            string message = expectedMessage;
+            health.OnDead += () => message = "On Dead Event Triggered";
+            health.TakeDamage(attacker);
+
+            //Assert
+            Assert.AreEqual(expectedMessage, message);
+        }
+
+        [Test]
+        [TestCase(2)]
+        [TestCase(3)]
+        [TestCase(5)]
+        public void trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(int loopValue)
+        {
+            // Arrange
+            int maxHealth = 100;
+            IHealth health = new Health(maxHealth);
+            IAttacker attacker = Substitute.For<IAttacker>();
+            int damageLoop = loopValue;
+
+            //Act
+            attacker.Damage.Returns(maxHealth + 1);
+            int damageCounter = 0;
+            health.OnTakeDamage += () => damageCounter++;
+            for (int i = 0; i < damageLoop; i++)
+            {
+                health.TakeDamage(attacker);
+            }
+
+            //Assert
+            Assert.AreEqual(1, damageCounter);
         }
     }
 }
