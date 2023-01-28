@@ -8,6 +8,19 @@ namespace CombatTests
 {
     public class health_edit_mode_test
     {
+        IAttacker _attacker;
+
+        [SetUp]  // Setup, bu script daxilindeki her test ise duserken, 1 defe ise dus demekdir
+        public void Setup()
+        {
+            _attacker = Substitute.For<IAttacker>();
+        }
+        private IHealth GetHealth(int maxHealth)
+        {
+            Health health = new Health(maxHealth);
+            return health;
+        }
+
         [Test]
         [TestCase(1)]
         [TestCase(2)]
@@ -17,12 +30,11 @@ namespace CombatTests
         {
             // Arragne
             int maxHealth = 1;
-            Health health = new Health(maxHealth);
-            IAttacker attacker = Substitute.For<IAttacker>();
+            var health = GetHealth(maxHealth);
 
             // Act
-            attacker.Damage.Returns(damageValue);
-            health.TakeDamage(attacker);
+            _attacker.Damage.Returns(damageValue);
+            health.TakeDamage(_attacker);
             // Assert
             Assert.AreNotEqual(maxHealth, health.CurrnetHealth);
         }
@@ -37,12 +49,11 @@ namespace CombatTests
         {
             // Arragne
             int maxHealth = 1;
-            Health health = new Health(maxHealth);
-            IAttacker attacker = Substitute.For<IAttacker>();
+            var health = GetHealth(maxHealth);
 
             // Act
-            attacker.Damage.Returns(damageValue);
-            health.TakeDamage(attacker);
+            _attacker.Damage.Returns(damageValue);
+            health.TakeDamage(_attacker);
             // Assert
             Assert.GreaterOrEqual(health.CurrnetHealth, 0);
         }
@@ -51,14 +62,13 @@ namespace CombatTests
         public void trigger_event_when_take_damage_one_time()
         {
             // Arrange
-            IHealth health = new Health(5);
-            IAttacker attacker = Substitute.For<IAttacker>();
+            var health = GetHealth(5);
             
             //Act
-            attacker.Damage.Returns(1);
+            _attacker.Damage.Returns(1);
             string message = string.Empty;
             health.OnTakeDamage += () => message = "On Took Damage Event Triggered";
-            health.TakeDamage(attacker);
+            health.TakeDamage(_attacker);
 
             //Assert
             Assert.AreNotEqual(string.Empty, message);
@@ -73,18 +83,17 @@ namespace CombatTests
         {
             // Arrange
             int maxHealth = 100;
-            IHealth health = new Health(maxHealth);
-            IAttacker attacker = Substitute.For<IAttacker>();
+            var health = GetHealth(maxHealth);
             int damageLoop = loopValue;
 
             //Act
-            attacker.Damage.Returns(1);
+            _attacker.Damage.Returns(1);
             int damageCounter = loopValue;
             health.OnTakeDamage += () => damageCounter++;
             for (int i = 0; i < damageLoop; i++)
             {
                 
-            health.TakeDamage(attacker);
+            health.TakeDamage(_attacker);
             }
 
             //Assert
@@ -96,14 +105,13 @@ namespace CombatTests
         {
             // Arrange
             int maxHealth = 100;
-            IHealth health = new Health(maxHealth);
-            IAttacker attacker = Substitute.For<IAttacker>();
+            var health = GetHealth(maxHealth);
             
             //Act
-            attacker.Damage.Returns(maxHealth + 1);
+            _attacker.Damage.Returns(maxHealth + 1);
             string message = string.Empty;
             health.OnDead += () => message = "On Dead Event Triggered";
-            health.TakeDamage(attacker);
+            health.TakeDamage(_attacker);
 
             //Assert
             Assert.AreNotEqual(string.Empty, message);
@@ -114,15 +122,14 @@ namespace CombatTests
         {
             // Arrange
             int maxHealth = 100;
-            IHealth health = new Health(maxHealth);
-            IAttacker attacker = Substitute.For<IAttacker>();
+            var health = GetHealth(maxHealth);
             
             //Act
-            attacker.Damage.Returns(maxHealth / 2);
+            _attacker.Damage.Returns(maxHealth / 2);
             string expectedMessage = "Dead Event Not Triggered";
             string message = expectedMessage;
             health.OnDead += () => message = "On Dead Event Triggered";
-            health.TakeDamage(attacker);
+            health.TakeDamage(_attacker);
 
             //Assert
             Assert.AreEqual(expectedMessage, message);
@@ -136,17 +143,17 @@ namespace CombatTests
         {
             // Arrange
             int maxHealth = 100;
-            IHealth health = new Health(maxHealth);
-            IAttacker attacker = Substitute.For<IAttacker>();
+            var health = GetHealth(maxHealth);
+            
             int damageLoop = loopValue;
 
             //Act
-            attacker.Damage.Returns(maxHealth + 1);
+            _attacker.Damage.Returns(maxHealth + 1);
             int damageCounter = 0;
             health.OnTakeDamage += () => damageCounter++;
             for (int i = 0; i < damageLoop; i++)
             {
-                health.TakeDamage(attacker);
+                health.TakeDamage(_attacker);
             }
 
             //Assert
