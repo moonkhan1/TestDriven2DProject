@@ -5,6 +5,7 @@ using TestDriven.Concretes.Stats;
 using TestDriven.Inputs;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour, IPlayerController
 {
     [SerializeField] PlayerStats _playerStats;
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     public IPlayerStats Stats => _playerStats;
 
+    public IHealth Health { get; private set; }
 
     IMover _mover;
     IFlip _flip;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
         InputReader = new InputReader();
         _mover = new MoveWithTransform(this);
         _flip = new PlayerFlipWithScale(this);
+        Health = new Health(Stats);
     }
      void Update() 
     {
@@ -31,4 +34,6 @@ public class PlayerController : MonoBehaviour, IPlayerController
     void FixedUpdate() {
         _mover.MoveAction();
     }
+
+    
 }

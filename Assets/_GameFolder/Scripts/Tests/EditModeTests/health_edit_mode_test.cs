@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
 using NSubstitute;
+using UnityEngine.TestTools;
 
 namespace CombatTests
 {
@@ -17,7 +18,9 @@ namespace CombatTests
         }
         private IHealth GetHealth(int maxHealth)
         {
-            Health health = new Health(maxHealth);
+            IStats stats = Substitute.For<IStats>();
+            stats.MaxHealth.Returns(maxHealth);
+            Health health = new Health(stats);
             return health;
         }
 

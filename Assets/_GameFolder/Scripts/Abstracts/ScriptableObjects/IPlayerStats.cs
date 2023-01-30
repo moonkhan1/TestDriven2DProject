@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace TestDriven.Abstracts.Stats
 {
-    public interface IPlayerStats
+    public interface IPlayerStats : IStats
     {
-        float MoveSpeed {get;}
+      float JumpForce {get;}
     }
 }

@@ -7,10 +7,9 @@ using UnityEngine;
 namespace TestDriven.Concretes.Stats
 {
     [CreateAssetMenu(fileName = "PlayerStats", menuName = "TestDriven/Stats/PlayerStats")]
-    public class PlayerStats : ScriptableObject, IPlayerStats
+    public class PlayerStats : StatsBase, IPlayerStats
     {
-        [Header("Move Infoes")]
-        [SerializeField] float _moveSpeed = 5f;
-        public float MoveSpeed => _moveSpeed;
+        public float JumpForce {get;}
+
     }
 }

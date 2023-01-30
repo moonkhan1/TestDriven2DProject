@@ -7,4 +7,5 @@ public interface IPlayerController : IEntityController
 {
     IInputReader InputReader {get; set;}
     IPlayerStats Stats {get;}
+    IHealth Health { get; }
 }

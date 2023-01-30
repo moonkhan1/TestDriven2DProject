@@ -6,14 +6,16 @@ using UnityEngine;
 public class Health : IHealth
 {
     int _currentHealth = 0;
+    int _maxHealth = 0;
     public event Action OnTakeDamage;
     public event Action OnDead;
 
     public int CurrnetHealth => _currentHealth;
     bool IsDead => _currentHealth <= 0;
-    public Health(int maxHealth)
+    public Health(IStats stats)
     {
-        _currentHealth = maxHealth;
+        _maxHealth = stats.MaxHealth;
+        _currentHealth = _maxHealth;
         
     }
 
