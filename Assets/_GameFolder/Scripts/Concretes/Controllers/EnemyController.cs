@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour, IEnemyController
     {
         if (other.collider.TryGetComponent(out IPlayerController playerController))
         {
+            if(other.contacts[0].normal.y < 0f) return; // Player-in y-i 0 ve (-1) arasinda, yeni asagi hissesinden damage almamalidir
+
             playerController.Health.TakeDamage(Attacker);
         }
     }

@@ -67,5 +67,21 @@ namespace CombatTests
 
         }
 
+
+        [UnityTest] // Player asagi terefden damage almamalidir
+        public IEnumerator player_take_no_damage_from_down_side()
+        {
+            
+            _enemyStats.Damage.Returns(1);
+            int maxHealth = _player.Health.CurrnetHealth;
+            Vector3 playerNearestPosition = _player.transform.position + (Vector3.down / 2f);
+            _enemy.transform.position = playerNearestPosition;
+
+            yield return new WaitForSeconds(1f);
+
+            Assert.AreEqual(maxHealth, _player.Health.CurrnetHealth);
+
+        }
+
     }
 }
