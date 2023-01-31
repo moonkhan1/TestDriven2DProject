@@ -6,4 +6,5 @@ public interface IEnemyController : IEntityController
 {
     IAttacker Attacker {get; set;}
     IEnemyStats Stats {get;}
+    IHealth Health {get;}
 }

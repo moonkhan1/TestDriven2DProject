@@ -8,8 +8,11 @@ public class EnemyController : MonoBehaviour, IEnemyController
     public IAttacker Attacker {get; set;}
     public IEnemyStats Stats => _stats;
 
+    public IHealth Health {get; private set;}
+
     private void Awake() {
         Attacker = new Attacker(Stats);
+        Health = new Health(Stats);
     }
 
     private void OnCollisionEnter2D(Collision2D other)

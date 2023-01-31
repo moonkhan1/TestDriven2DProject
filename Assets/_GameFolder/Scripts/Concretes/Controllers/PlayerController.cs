@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public IPlayerStats Stats => _playerStats;
 
     public IHealth Health { get; private set; }
+    public IAttacker Attacker { get; private set; }
 
     IMover _mover;
     IFlip _flip;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
         _mover = new MoveWithTransform(this);
         _flip = new PlayerFlipWithScale(this);
         Health = new Health(Stats);
+        Attacker = new Attacker(Stats);
     }
      void Update() 
     {
@@ -35,5 +37,12 @@ public class PlayerController : MonoBehaviour, IPlayerController
         _mover.MoveAction();
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.collider.TryGetComponent(out IEnemyController enemyController))
+        {  
+            if(other.contacts[0].normal.y != 1f) return;
+
+            enemyController.Health.TakeDamage(Attacker);
+        }
+    }
 }
