@@ -298,6 +298,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1592028691, guid: 9a648a76dba364f459252fabcc149257, type: 3}
+      propertyPath: m_Size.y
+      value: 0.73050845
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592028691, guid: 9a648a76dba364f459252fabcc149257, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.008122683
+      objectReference: {fileID: 0}
     - target: {fileID: 1060637528452413891, guid: 9a648a76dba364f459252fabcc149257, type: 3}
       propertyPath: m_Name
       value: Player
@@ -406,6 +414,14 @@ PrefabInstance:
     - target: {fileID: 1671111212463409467, guid: d38d546cfad99eb4da74e1341007a955, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671111212920223831, guid: d38d546cfad99eb4da74e1341007a955, type: 3}
+      propertyPath: m_Size.y
+      value: 0.31382906
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671111212920223831, guid: d38d546cfad99eb4da74e1341007a955, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.026691705
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d38d546cfad99eb4da74e1341007a955, type: 3}
