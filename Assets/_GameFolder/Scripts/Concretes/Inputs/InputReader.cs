@@ -6,15 +6,18 @@ namespace TestDriven.Inputs
 {
     public class InputReader : IInputReader
     {
+        readonly GameInputActions _input;
         public float Horizontal { get; private set; }
+
+        public bool Jump => _input.Player.Jump.WasPerformedThisFrame();
 
         public InputReader()
         {
-            GameInputActions input = new GameInputActions();
+            _input = new GameInputActions();
 
-            input.Enable();
-            input.Player.Move.performed += HandleMoveAction;
-            input.Player.Move.canceled += HandleMoveAction;
+            _input.Enable();
+            _input.Player.Move.performed += HandleMoveAction;
+            _input.Player.Move.canceled += HandleMoveAction;
         }
 
         private void HandleMoveAction(InputAction.CallbackContext context)

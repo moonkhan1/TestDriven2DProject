@@ -14,43 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 7.2000003
-    y: 50.4
-    width: 1521.6
-    height: 766.4
+    x: 0
+    y: 43.2
+    width: 1536
+    height: 780.8
   m_ShowMode: 4
-  m_Title: Test Runner
-  m_RootView: {fileID: 7}
+  m_Title: Console
+  m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 752.8
-    y: 0
-    width: 448.00006
-    height: 424
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 20}
-  m_Panes:
-  - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,19 +37,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 4}
+  - {fileID: 9}
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1521.6
-    height: 716.4
-  m_MinSize: {x: 400, y: 200}
-  m_MaxSize: {x: 32384, y: 16192}
+    width: 1536
+    height: 730.8
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 43
---- !u!114 &4
+  controlID: 122
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,24 +59,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1200.8
+    x: 1336.8
     y: 0
-    width: 320.79993
-    height: 716.4
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
+    width: 199.19995
+    height: 730.8
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &5
+  - {fileID: 16}
+  - {fileID: 12}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,16 +93,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 353.6
-    height: 424
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+    width: 381.6
+    height: 432.8
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &6
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,24 +112,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 424
-    width: 1200.8
-    height: 292.40002
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 16}
+    y: 432.8
+    width: 1336.8
+    height: 298
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 21}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &7
+  - {fileID: 15}
+  - {fileID: 20}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,22 +142,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 7}
+  - {fileID: 2}
   - {fileID: 8}
-  - {fileID: 3}
-  - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1521.6
-    height: 766.4
+    width: 1536
+    height: 780.8
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &8
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,12 +174,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1521.6
+    width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &9
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,11 +195,36 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 746.4
-    width: 1521.6
+    y: 760.8
+    width: 1536
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 5}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1336.8
+    height: 730.8
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 123
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,18 +238,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 4}
   - {fileID: 11}
-  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1200.8
-    height: 716.4
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 1
-  controlID: 71
+    width: 1336.8
+    height: 432.8
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 124
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,52 +259,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 5}
-  - {fileID: 12}
-  - {fileID: 2}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1200.8
-    height: 424
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 8096}
-  vertical: 0
-  controlID: 72
---- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 353.6
+    x: 381.6
     y: 0
-    width: 399.19998
-    height: 424
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 955.2001
+    height: 432.8
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 15}
+  - {fileID: 18}
   - {fileID: 14}
-  m_Selected: 0
+  - {fileID: 19}
+  - {fileID: 13}
+  m_Selected: 2
   m_LastSelected: 0
---- !u!114 &13
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -325,16 +299,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -24399.201
-    y: -25569.6
-    width: 319.79993
+    x: 926.4
+    y: 80.8
+    width: 601.39996
     height: 695.4
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 144
+    ID: 157
     splitterInitialOffset: 540
     currentActiveSplitter: -1
     realSizes:
@@ -357,16 +331,16 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 13}
+    m_Window: {fileID: 12}
     m_NewResultList:
     - id: 1008
       uniqueId: '[TestDriven2DProject][suite]'
       name: TestDriven2DProject
       fullName: TestDriven2DProject
       resultStatus: 1
-      duration: 2.6153038
+      duration: 4.446459
       messages: 
       output: 
       stacktrace: 
@@ -382,7 +356,7 @@ MonoBehaviour:
       name: PlayModeTest.dll
       fullName: C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/PlayModeTest.dll
       resultStatus: 1
-      duration: 2.484154
+      duration: 4.3130784
       messages: 
       output: 
       stacktrace: 
@@ -398,7 +372,7 @@ MonoBehaviour:
       name: CombatTests
       fullName: CombatTests
       resultStatus: 1
-      duration: 2.4707782
+      duration: 4.3008747
       messages: 
       output: 
       stacktrace: 
@@ -414,7 +388,7 @@ MonoBehaviour:
       name: play_test_health
       fullName: CombatTests.play_test_health
       resultStatus: 1
-      duration: 2.4664142
+      duration: 1.2265013
       messages: 
       output: 
       stacktrace: 
@@ -425,12 +399,96 @@ MonoBehaviour:
       categories: []
       parentId: 1021
       parentUniqueId: PlayModeTest.dll/[PlayModeTest][CombatTests][suite]
+    - id: 1014
+      uniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_no_damage_from_down_side]
+      name: player_take_no_damage_from_down_side
+      fullName: CombatTests.play_test_health.player_take_no_damage_from_down_side
+      resultStatus: 1
+      duration: 1.2115443
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayModeTest.dll/CombatTests/[PlayModeTest][CombatTests.play_test_health][suite]
+    - id: 1013
+      uniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides][suite]
+      name: player_take_one_damage_from_left_up_right_sides
+      fullName: CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides
+      resultStatus: 1
+      duration: 3.3122716
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: PlayModeTest.dll/CombatTests/[PlayModeTest][CombatTests.play_test_health][suite]
+    - id: 1010
+      uniqueId: PlayModeTest.dll/CombatTests/play_test_health/player_take_one_damage_from_left_up_right_sides/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides(0.0f,1.0f)]
+      name: player_take_one_damage_from_left_up_right_sides(0.0f,1.0f)
+      fullName: CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides(0.0f,1.0f)
+      resultStatus: 1
+      duration: 1.1960336
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides][suite]
+    - id: 1011
+      uniqueId: PlayModeTest.dll/CombatTests/play_test_health/player_take_one_damage_from_left_up_right_sides/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides(1.0f,0.0f)]
+      name: player_take_one_damage_from_left_up_right_sides(1.0f,0.0f)
+      fullName: CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides(1.0f,0.0f)
+      resultStatus: 1
+      duration: 1.0521656
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides][suite]
+    - id: 1012
+      uniqueId: PlayModeTest.dll/CombatTests/play_test_health/player_take_one_damage_from_left_up_right_sides/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides(-1.0f,0.0f)]
+      name: player_take_one_damage_from_left_up_right_sides(-1.0f,0.0f)
+      fullName: CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides(-1.0f,0.0f)
+      resultStatus: 1
+      duration: 1.050589
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_from_left_up_right_sides][suite]
     - id: 1007
       uniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_in_one_time][suite]
       name: player_take_one_damage_in_one_time
       fullName: CombatTests.play_test_health.player_take_one_damage_in_one_time
       resultStatus: 1
-      duration: 2.4607112
+      duration: 1.2001017
       messages: 
       output: 
       stacktrace: 
@@ -475,12 +533,146 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1007
       parentUniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_in_one_time][suite]
+    - id: 1007
+      uniqueId: PlayModeTest.dll/CombatTests/play_test_health/player_take_one_damage_in_one_time/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_in_one_time(5)]
+      name: player_take_one_damage_in_one_time(5)
+      fullName: CombatTests.play_test_health.player_take_one_damage_in_one_time(5)
+      resultStatus: 1
+      duration: 1.1829731
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_in_one_time][suite]
+    - id: 1008
+      uniqueId: PlayModeTest.dll/CombatTests/play_test_health/player_take_one_damage_in_one_time/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_in_one_time(10)]
+      name: player_take_one_damage_in_one_time(10)
+      fullName: CombatTests.play_test_health.player_take_one_damage_in_one_time(10)
+      resultStatus: 1
+      duration: 1.1887585
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: PlayModeTest.dll/CombatTests/play_test_health/[PlayModeTest][CombatTests.play_test_health.player_take_one_damage_in_one_time][suite]
+    - id: 1017
+      uniqueId: PlayModeTest.dll/CombatTests/[PlayModeTest][CombatTests.player_attack_play_mode_test][suite]
+      name: player_attack_play_mode_test
+      fullName: CombatTests.player_attack_play_mode_test
+      resultStatus: 1
+      duration: 4.297219
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1032
+      parentUniqueId: PlayModeTest.dll/[PlayModeTest][CombatTests][suite]
+    - id: 1022
+      uniqueId: PlayModeTest.dll/CombatTests/player_attack_play_mode_test/[PlayModeTest][CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides][suite]
+      name: player_attack_can_not_attack_from_left_down_right_sides
+      fullName: CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides
+      resultStatus: 1
+      duration: 3.2200234
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1017
+      parentUniqueId: PlayModeTest.dll/CombatTests/[PlayModeTest][CombatTests.player_attack_play_mode_test][suite]
+    - id: 1019
+      uniqueId: PlayModeTest.dll/CombatTests/player_attack_play_mode_test/player_attack_can_not_attack_from_left_down_right_sides/[PlayModeTest][CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides(-1.0f,0.0f)]
+      name: player_attack_can_not_attack_from_left_down_right_sides(-1.0f,0.0f)
+      fullName: CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides(-1.0f,0.0f)
+      resultStatus: 1
+      duration: 1.1139911
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: PlayModeTest.dll/CombatTests/player_attack_play_mode_test/[PlayModeTest][CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides][suite]
+    - id: 1020
+      uniqueId: PlayModeTest.dll/CombatTests/player_attack_play_mode_test/player_attack_can_not_attack_from_left_down_right_sides/[PlayModeTest][CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides(1.0f,0.0f)]
+      name: player_attack_can_not_attack_from_left_down_right_sides(1.0f,0.0f)
+      fullName: CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides(1.0f,0.0f)
+      resultStatus: 1
+      duration: 1.0494826
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: PlayModeTest.dll/CombatTests/player_attack_play_mode_test/[PlayModeTest][CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides][suite]
+    - id: 1021
+      uniqueId: PlayModeTest.dll/CombatTests/player_attack_play_mode_test/player_attack_can_not_attack_from_left_down_right_sides/[PlayModeTest][CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides(0.0f,-1.0f)]
+      name: player_attack_can_not_attack_from_left_down_right_sides(0.0f,-1.0f)
+      fullName: CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides(0.0f,-1.0f)
+      resultStatus: 1
+      duration: 1.0484487
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: PlayModeTest.dll/CombatTests/player_attack_play_mode_test/[PlayModeTest][CombatTests.player_attack_play_mode_test.player_attack_can_not_attack_from_left_down_right_sides][suite]
+    - id: 1018
+      uniqueId: PlayModeTest.dll/CombatTests/player_attack_play_mode_test/[PlayModeTest][CombatTests.player_attack_play_mode_test.player_attack_one_time]
+      name: player_attack_one_time
+      fullName: CombatTests.player_attack_play_mode_test.player_attack_one_time
+      resultStatus: 1
+      duration: 1.0663049
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: PlayModeTest.dll/CombatTests/[PlayModeTest][CombatTests.player_attack_play_mode_test][suite]
     - id: 1022
       uniqueId: PlayModeTest.dll/[PlayModeTest][MovementTests][suite]
       name: MovementTests
       fullName: MovementTests
       resultStatus: 1
-      duration: 30.797468
+      duration: 30.685783
       messages: 
       output: 
       stacktrace: 
@@ -496,7 +688,7 @@ MonoBehaviour:
       name: player_flip_playmode
       fullName: MovementTests.player_flip_playmode
       resultStatus: 1
-      duration: 18.545584
+      duration: 18.451046
       messages: 
       output: 
       stacktrace: 
@@ -512,7 +704,7 @@ MonoBehaviour:
       name: player_scale_x_flip_when_value_become_zero
       fullName: MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero
       resultStatus: 1
-      duration: 12.425415
+      duration: 12.3287525
       messages: 
       output: 
       stacktrace: 
@@ -528,7 +720,7 @@ MonoBehaviour:
       name: player_scale_x_flip_when_value_become_zero(1.0f)
       fullName: MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero(1.0f)
       resultStatus: 1
-      duration: 6.364978
+      duration: 6.2576704
       messages: 
       output: 
       stacktrace: 
@@ -545,7 +737,7 @@ MonoBehaviour:
       name: player_scale_x_flip_when_value_become_zero(-1.0f)
       fullName: MovementTests.player_flip_playmode.player_scale_x_flip_when_value_become_zero(-1.0f)
       resultStatus: 1
-      duration: 6.057415
+      duration: 6.058146
       messages: 
       output: 
       stacktrace: 
@@ -562,7 +754,7 @@ MonoBehaviour:
       name: player_scale_x_flip_with_one_or_minus_one
       fullName: MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one
       resultStatus: 1
-      duration: 6.116377
+      duration: 6.1161475
       messages: 
       output: 
       stacktrace: 
@@ -578,7 +770,7 @@ MonoBehaviour:
       name: player_scale_x_flip_with_one_or_minus_one(1.0f)
       fullName: MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one(1.0f)
       resultStatus: 1
-      duration: 3.0552971
+      duration: 3.0573442
       messages: 
       output: 
       stacktrace: 
@@ -595,7 +787,7 @@ MonoBehaviour:
       name: player_scale_x_flip_with_one_or_minus_one(-1.0f)
       fullName: MovementTests.player_flip_playmode.player_scale_x_flip_with_one_or_minus_one(-1.0f)
       resultStatus: 1
-      duration: 3.056178
+      duration: 3.0525742
       messages: 
       output: 
       stacktrace: 
@@ -612,7 +804,7 @@ MonoBehaviour:
       name: player_movement_playmodetest
       fullName: MovementTests.player_movement_playmodetest
       resultStatus: 1
-      duration: 12.246878
+      duration: 12.229591
       messages: 
       output: 
       stacktrace: 
@@ -628,7 +820,7 @@ MonoBehaviour:
       name: player_move_left_greater_than_start_position
       fullName: MovementTests.player_movement_playmodetest.player_move_left_greater_than_start_position
       resultStatus: 1
-      duration: 3.0591052
+      duration: 3.0573792
       messages: 
       output: 
       stacktrace: 
@@ -645,7 +837,7 @@ MonoBehaviour:
       name: player_move_right_greater_than_start_position
       fullName: MovementTests.player_movement_playmodetest.player_move_right_greater_than_start_position
       resultStatus: 1
-      duration: 3.056153
+      duration: 3.0543501
       messages: 
       output: 
       stacktrace: 
@@ -662,7 +854,7 @@ MonoBehaviour:
       name: player_move_right_or_left_different_from_start_position
       fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position
       resultStatus: 1
-      duration: 6.1261153
+      duration: 6.1127224
       messages: 
       output: 
       stacktrace: 
@@ -678,7 +870,7 @@ MonoBehaviour:
       name: player_move_right_or_left_different_from_start_position(1.0f)
       fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position(1.0f)
       resultStatus: 1
-      duration: 3.063088
+      duration: 3.0566947
       messages: 
       output: 
       stacktrace: 
@@ -695,7 +887,7 @@ MonoBehaviour:
       name: player_move_right_or_left_different_from_start_position(-1.0f)
       fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position(-1.0f)
       resultStatus: 1
-      duration: 3.057794
+      duration: 3.0512395
       messages: 
       output: 
       stacktrace: 
@@ -757,13 +949,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayModeTest.dll/[PlayModeTest][play_test_script][suite]
-    m_ResultText: player_take_one_damage_in_one_time (2.461s)
+    m_ResultText: player_attack_play_mode_test (4.297s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2eac80ff
-      m_LastClickedID: -8344530
-      m_ExpandedIDs: 8c1fc688cf292f8cb1c7829ab01868af9741aee74172c1eb2eac80ff0dd4460ccd9c155cffffff7f
+      m_SelectedIDs: 34f02ef6
+      m_LastClickedID: -164696012
+      m_ExpandedIDs: 8c1fc688cf292f8cb1c7829ab01868af9741aee74172c1eb34f02ef62eac80fff3f2a70b0dd4460c7a2c580ccd9c155cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -791,7 +983,7 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 13}
+    m_Window: {fileID: 12}
     m_NewResultList:
     - id: 1000
       uniqueId: '[TestDriven2DProject][suite]'
@@ -1566,7 +1758,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &14
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1594,7 +1786,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1622,7 +1814,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &16
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1642,10 +1834,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
-    y: 504.80002
-    width: 1199.8
-    height: 271.40002
+    x: 0
+    y: 506.4
+    width: 1335.8
+    height: 277
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1663,22 +1855,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_GameFolder/ScriptableObjects
+    - Assets/_GameFolder/Scripts/Concretes/Inputs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_GameFolder/ScriptableObjects
+  - Assets/_GameFolder/Scripts/Concretes/Inputs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Ayxan\Desktop\CodeAcedmy\TestDriven2DProject\TestDriven2DProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 40.599976}
-    m_SelectedIDs: 06650000
-    m_LastClickedID: 25862
-    m_ExpandedIDs: 00000000b4640000b6640000b8640000ba640000bc640000be640000c0640000c2640000c4640000c6640000c8640000ca640000cc640000ce64000000ca9a3b
+    scrollPos: {x: 0, y: 240}
+    m_SelectedIDs: 1c650000
+    m_LastClickedID: 25884
+    m_ExpandedIDs: 00000000c6640000c8640000ca640000cc640000ce640000d0640000d2640000d4640000d6640000d8640000da640000dc640000de6400002265000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1694,7 +1886,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 6}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1706,7 +1898,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b4640000b6640000b8640000ba640000bc640000be640000c0640000c2640000c4640000c6640000c8640000ca640000cc640000ce640000
+    m_ExpandedIDs: 00000000c6640000c8640000ca640000cc640000ce640000d0640000d2640000d4640000d6640000d8640000da640000dc640000de640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1731,8 +1923,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 60650000
+    m_LastClickedInstanceID: 25952
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -1750,7 +1942,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 6}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1762,7 +1954,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1782,10 +1974,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1208
-    y: 80.8
-    width: 319.79993
-    height: 695.4
+    x: 1336.8
+    y: 73.6
+    width: 198.19995
+    height: 709.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1803,7 +1995,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1823,10 +2015,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
-    y: 80.8
-    width: 352.6
-    height: 403
+    x: 0
+    y: 73.6
+    width: 380.6
+    height: 411.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1834,9 +2026,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 60650000
       m_LastClickedID: 0
-      m_ExpandedIDs: 78edffffbeedffffa2efffff18f1ffff5ef1ffff86f4ffff08fbffff
+      m_ExpandedIDs: 08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1852,7 +2044,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 5}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1860,7 +2052,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &19
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1880,10 +2072,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 360.80002
-    y: 80.8
-    width: 397.19998
-    height: 403
+    x: 265.8
+    y: 19
+    width: 661.2
+    height: 411.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2107,9 +2299,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.8763583, y: 1.5233805, z: -0.04300239}
+    m_Target: {x: 1.8096519, y: 0.112413, z: -0.01908494}
     speed: 2
-    m_Value: {x: -1.8763583, y: 1.5233805, z: -0.04300239}
+    m_Value: {x: 1.8096519, y: 0.112413, z: -0.01908494}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2160,9 +2352,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.1903014
+    m_Target: 4.5160055
     speed: 2
-    m_Value: 6.1903014
+    m_Value: 4.5160055
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2187,7 +2379,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &20
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2207,10 +2399,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 760
-    y: 80.8
-    width: 446.00006
-    height: 403
+    x: 381.6
+    y: 73.6
+    width: 953.2001
+    height: 411.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2221,7 +2413,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 446.00006, y: 382}
+  m_TargetSize: {x: 953.2001, y: 390.8}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -2236,10 +2428,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -178.40002
-    m_HBaseRangeMax: 178.40002
-    m_VBaseRangeMin: -152.8
-    m_VBaseRangeMax: 152.8
+    m_HBaseRangeMin: -381.28003
+    m_HBaseRangeMax: 381.28003
+    m_VBaseRangeMin: -156.31999
+    m_VBaseRangeMax: 156.31999
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -2257,29 +2449,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 446.00006
-      height: 382
+      width: 953.2001
+      height: 390.8
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 223.00003, y: 191}
+    m_Translation: {x: 476.60004, y: 195.4}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -223.00003
-      y: -191
-      width: 446.00006
-      height: 382
+      x: -476.60004
+      y: -195.4
+      width: 953.2001
+      height: 390.8
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 557.50006, y: 503.75}
+  m_LastWindowPixelSize: {x: 1191.5001, y: 514.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &21
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2299,10 +2491,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
-    y: 504.80002
-    width: 1258.2
-    height: 271.40002
+    x: 0
+    y: 506.4
+    width: 1335.8
+    height: 277
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

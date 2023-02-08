@@ -5,4 +5,5 @@ using UnityEngine;
 public interface IInputReader
 {
     float Horizontal {get;}
+    bool Jump { get; }
 }
