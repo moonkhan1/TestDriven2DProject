@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TestDriven.Abstracts.Movements
+
+namespace TestDriven.Abstracts.Managers
 {
-    public interface IJump
+    public interface IJumpService
     {
         void Tick();
         void FixedTick();

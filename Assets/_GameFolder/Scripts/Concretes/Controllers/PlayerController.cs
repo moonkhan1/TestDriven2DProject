@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TestDriven.Abstracts.Managers;
 using TestDriven.Abstracts.Stats;
+using TestDriven.Concretes.Managers;
+using TestDriven.Concretes.Movemenets;
 using TestDriven.Concretes.Stats;
 using TestDriven.Inputs;
 using UnityEngine;
@@ -16,6 +19,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public IHealth Health { get; private set; }
     public IAttacker Attacker { get; private set; }
 
+    public IJumpService JumpManager {get; private set;}
     IMover _mover;
     IFlip _flip;
     void Awake() 
@@ -25,6 +29,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
         _flip = new PlayerFlipWithScale(this);
         Health = new Health(Stats);
         Attacker = new Attacker(Stats);
+        JumpManager = new PlayerJumpManager(this, new PlayerJumpWithForce(this));
     }
      void Update() 
     {
