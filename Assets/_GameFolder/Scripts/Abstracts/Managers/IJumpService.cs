@@ -9,5 +9,6 @@ namespace TestDriven.Abstracts.Managers
     {
         void Tick();
         void FixedTick();
+        void ReserJumpCounter();
     }
 }

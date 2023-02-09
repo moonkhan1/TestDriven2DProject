@@ -9,7 +9,8 @@ namespace TestDriven.Concretes.Stats
     [CreateAssetMenu(fileName = "PlayerStats", menuName = "TestDriven/Stats/PlayerStats")]
     public class PlayerStats : StatsBase, IPlayerStats
     {
-        public float JumpForce {get;}
+        [SerializeField] float _jumpForce = 15000f;
+        public float JumpForce => _jumpForce;
 
     }
 }

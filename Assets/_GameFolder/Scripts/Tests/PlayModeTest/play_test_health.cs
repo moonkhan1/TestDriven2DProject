@@ -33,11 +33,11 @@ namespace CombatTests
 
         public IEnumerator player_take_one_damage_in_one_time(int damageValue)
         {
-            
+            Vector3 attackPosition = new Vector3(1, 0f, 0f);
             _enemyStats.Damage.Returns(damageValue);
             _enemy.Attacker = new Attacker(_enemyStats);
             int maxHealth = _player.Health.CurrnetHealth;
-            Vector3 playerPosition = _player.transform.position;
+            Vector3 playerPosition = _player.transform.position + (attackPosition / 2f);
             _enemy.transform.position = playerPosition;
 
             yield return new WaitForSeconds(1f);

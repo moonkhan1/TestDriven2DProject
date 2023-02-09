@@ -18,8 +18,8 @@ namespace MovementTests
             var playerJumpManager = new PlayerJumpManager(player, jumpDal);
 
             player.InputReader.Jump.Returns(true);
-            player.JumpManager.Tick();
-            player.JumpManager.FixedTick(); 
+            playerJumpManager.Tick();
+            playerJumpManager.FixedTick(); 
             jumpDal.Received().JumpProcess();
         }
 
@@ -31,8 +31,8 @@ namespace MovementTests
             var playerJumpManager = new PlayerJumpManager(player, jumpDal);
 
             player.InputReader.Jump.Returns(false);
-            player.JumpManager.Tick();
-            player.JumpManager.FixedTick(); 
+            playerJumpManager.Tick();
+            playerJumpManager.FixedTick();  
             jumpDal.DidNotReceive().JumpProcess();
         }
     }

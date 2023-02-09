@@ -11,6 +11,8 @@ namespace TestDriven.Concretes.Managers
         readonly IPlayerController _playerController;
         readonly IJumpDal _jumpDal;
         bool _canJump;
+        int _currentJumpCount = 0;
+        int _maxJumpCount = 1;
         public PlayerJumpManager(IPlayerController playerController, IJumpDal jumpDal)
         {
             _playerController = playerController;
@@ -18,8 +20,9 @@ namespace TestDriven.Concretes.Managers
         }
         public void Tick()
         {
-            if (_playerController.InputReader.Jump)
+            if (_playerController.InputReader.Jump && _currentJumpCount < _maxJumpCount)
             {
+                _currentJumpCount++;
                 _canJump = true;
             }
 
@@ -32,6 +35,9 @@ namespace TestDriven.Concretes.Managers
             }
             _canJump = false;
         }
-
+        public void ReserJumpCounter()
+        {
+            _currentJumpCount = 0;
+        }
     }
 }
