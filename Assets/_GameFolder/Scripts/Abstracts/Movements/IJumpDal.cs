@@ -6,6 +6,6 @@ namespace TestDriven.Abstracts.Movements
 {
     public interface IJumpDal
     {
-        void JumpProcess();
+        void JumpProcess(float Value);
     }
 }

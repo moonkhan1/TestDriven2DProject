@@ -210,7 +210,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3965424412557456773, guid: 681e51717accfae458453ccfdc146b7c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3965424412557456773, guid: 681e51717accfae458453ccfdc146b7c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,6 +269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1285926901484522996, guid: 9a648a76dba364f459252fabcc149257, type: 3}
+      propertyPath: _rigidBody2D
+      value: 
+      objectReference: {fileID: 1285926901484522995}
     - target: {fileID: 3494294964220275630, guid: 9a648a76dba364f459252fabcc149257, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -315,6 +319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a648a76dba364f459252fabcc149257, type: 3}
+--- !u!50 &1285926901484522995 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1592028692, guid: 9a648a76dba364f459252fabcc149257, type: 3}
+  m_PrefabInstance: {fileID: 1285926901484522994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6802321202593399021
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -31,7 +31,7 @@ namespace TestDriven.Concretes.Managers
         {
             if (_canJump)
             {
-                _jumpDal.JumpProcess();
+                _jumpDal.JumpProcess(_playerController.Stats.JumpForce);
             }
             _canJump = false;
         }

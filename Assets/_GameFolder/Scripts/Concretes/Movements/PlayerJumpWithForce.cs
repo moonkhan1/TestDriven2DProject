@@ -5,20 +5,54 @@ using UnityEngine;
 
 namespace TestDriven.Concretes.Movemenets
 {
-    public class PlayerJumpWithForce : IJumpDal
+    public class JumpWithForce : IJumpDal
     {
-        readonly IPlayerController _playerController;
         readonly Rigidbody2D _rb2D;
-        public PlayerJumpWithForce(IPlayerController playerController)
+        public JumpWithForce(Rigidbody2D rb2D)
         {
-            _playerController = playerController;
-            _rb2D = _playerController.transform.GetComponent<Rigidbody2D>();
+            _rb2D = rb2D;
         }
 
-        public void JumpProcess()
+        public void JumpProcess(float value)
         {
-            float JumpForce = _playerController.Stats.JumpForce * Time.deltaTime;
-            _rb2D.AddForce(Vector3.up * JumpForce);
+            float JumpForceValue = value * Time.deltaTime;
+            _rb2D.AddForce(Vector3.up * JumpForceValue);
+        }
+       
+
+
+    }
+
+    public class JumpWithVelocity : IJumpDal
+    {
+        readonly Rigidbody2D _rb2D;
+        public JumpWithVelocity(Rigidbody2D rb2D)
+        {
+           _rb2D = rb2D;
+        }
+
+        public void JumpProcess(float value)
+        {
+            float JumpForceValue = value * Time.deltaTime;
+            _rb2D.velocity = Vector3.up * JumpForceValue;
+        }
+       
+
+
+    }
+
+    public class JumpWithTransformPos : IJumpDal
+    {
+        readonly Transform _transform;
+        public JumpWithTransformPos(Transform transform)
+        {
+            _transform = transform;
+        }
+
+        public void JumpProcess(float value)
+        {
+            float JumpForceValue = value * Time.deltaTime;
+            _transform.position += Vector3.up * JumpForceValue;
         }
        
 

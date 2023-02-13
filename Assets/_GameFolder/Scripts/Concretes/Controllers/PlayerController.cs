@@ -8,10 +8,11 @@ using TestDriven.Concretes.Stats;
 using TestDriven.Inputs;
 using UnityEngine;
 
-
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour, IPlayerController
 {
     [SerializeField] PlayerStats _playerStats;
+    [SerializeField] Rigidbody2D _rigidBody2D;
     public IInputReader InputReader {get;set;}
 
     public IPlayerStats Stats => _playerStats;
@@ -24,12 +25,18 @@ public class PlayerController : MonoBehaviour, IPlayerController
     IFlip _flip;
     void Awake() 
     {
+        GetReference();
         InputReader = new InputReader();
         _mover = new MoveWithTransform(this);
         _flip = new PlayerFlipWithScale(this);
         Health = new Health(Stats);
         Attacker = new Attacker(Stats);
-        JumpManager = new PlayerJumpManager(this, new PlayerJumpWithForce(this));
+        JumpManager = new PlayerJumpManager(this, new JumpWithForce(_rigidBody2D));
+    }
+
+    void OnValidate() 
+    {
+        GetReference();
     }
      void Update() 
     {
@@ -53,5 +60,11 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
             enemyController.Health.TakeDamage(Attacker);
         }
+    }
+
+    private void GetReference()
+    {
+        if(_rigidBody2D == null)
+            _rigidBody2D = GetComponent<Rigidbody2D>();
     }
 }
