@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
 {
     [SerializeField] PlayerStats _playerStats;
     [SerializeField] Rigidbody2D _rigidBody2D;
+    private Transform _transform;
     public IInputReader InputReader {get;set;}
 
     public IPlayerStats Stats => _playerStats;
@@ -21,17 +22,20 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public IAttacker Attacker { get; private set; }
 
     public IJumpService JumpManager {get; private set;}
-    IMover _mover;
+
+    public IMovementService MovementManager {get; private set;}
+
     IFlip _flip;
     void Awake() 
     {
         GetReference();
+        _transform = GetComponent<Transform>();
         InputReader = new InputReader();
-        _mover = new MoveWithTransform(this);
         _flip = new PlayerFlipWithScale(this);
         Health = new Health(Stats);
         Attacker = new Attacker(Stats);
         JumpManager = new PlayerJumpManager(this, new JumpWithForce(_rigidBody2D));
+        MovementManager = new PlayerMoveManager(this, new MoveWithTransformDal(_transform));
     }
 
     void OnValidate() 
@@ -40,15 +44,15 @@ public class PlayerController : MonoBehaviour, IPlayerController
     }
      void Update() 
     {
-        _mover.TakeInputAction();
         _flip.FlipAction();
+        MovementManager.Tick();
         JumpManager.Tick();
     }
 
     // Update is called once per frame
-    void FixedUpdate() {
-
-        _mover.MoveAction();
+    void FixedUpdate() 
+    {
+        MovementManager.FixedTick();
         JumpManager.FixedTick();
     }
 

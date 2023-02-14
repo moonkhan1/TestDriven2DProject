@@ -11,4 +11,5 @@ public interface IPlayerController : IEntityController
     IHealth Health { get; }
     IAttacker Attacker {get;}
     IJumpService JumpManager {get;}
+    IMovementService MovementManager{get;}
 }

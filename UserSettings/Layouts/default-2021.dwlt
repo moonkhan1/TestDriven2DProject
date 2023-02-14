@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1521.6
     height: 766.4
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 77
+  controlID: 110
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 186.4
-    height: 424
+    width: 260.8
+    height: 360.8
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 424
+    y: 360.8
     width: 1144
-    height: 292.40002
+    height: 355.60004
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 15}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 78
+  controlID: 70
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,11 +245,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1144
-    height: 424
+    height: 360.8
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 67
+  controlID: 71
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,10 +265,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 186.4
+    x: 260.8
     y: 0
-    width: 957.6
-    height: 424
+    width: 883.2
+    height: 360.8
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 127
+    ID: 307
     splitterInitialOffset: 540
     currentActiveSplitter: -1
     realSizes:
@@ -331,7 +331,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 12}
     m_NewResultList:
@@ -340,7 +340,7 @@ MonoBehaviour:
       name: TestDriven2DProject
       fullName: TestDriven2DProject
       resultStatus: 1
-      duration: 4.585979
+      duration: 24.579826
       messages: 
       output: 
       stacktrace: 
@@ -356,7 +356,7 @@ MonoBehaviour:
       name: PlayModeTest.dll
       fullName: C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/PlayModeTest.dll
       resultStatus: 1
-      duration: 4.449193
+      duration: 24.43969
       messages: 
       output: 
       stacktrace: 
@@ -672,7 +672,7 @@ MonoBehaviour:
       name: MovementTests
       fullName: MovementTests
       resultStatus: 1
-      duration: 35.861645
+      duration: 24.432964
       messages: 
       output: 
       stacktrace: 
@@ -804,7 +804,7 @@ MonoBehaviour:
       name: player_jump_playmode
       fullName: MovementTests.player_jump_playmode
       resultStatus: 1
-      duration: 4.67887
+      duration: 3.3250124
       messages: 
       output: 
       stacktrace: 
@@ -820,7 +820,7 @@ MonoBehaviour:
       name: player_jump_one_time
       fullName: MovementTests.player_jump_playmode.player_jump_one_time
       resultStatus: 1
-      duration: 0.5584226
+      duration: 0.7306726
       messages: 
       output: 
       stacktrace: 
@@ -832,29 +832,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1060
       parentUniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_jump_playmode][suite]
-    - id: 1013
-      uniqueId: PlayModeTest.dll/MovementTests/player_jump_playmode/[PlayModeTest][MovementTests.player_jump_playmode.player_jump_one_time_despite_input_taken_many_times]
-      name: player_jump_one_time_despite_input_taken_many_times
-      fullName: MovementTests.player_jump_playmode.player_jump_one_time_despite_input_taken_many_times
-      resultStatus: 1
-      duration: 1.5576428
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1011
-      parentUniqueId: PlayModeTest.dll/MovementTests/[PlayModeTest][MovementTests.player_jump_playmode][suite]
     - id: 1014
       uniqueId: PlayModeTest.dll/MovementTests/player_jump_playmode/[PlayModeTest][MovementTests.player_jump_playmode.player_jump_one_time_wait_before_jump_again]
       name: player_jump_one_time_wait_before_jump_again
       fullName: MovementTests.player_jump_playmode.player_jump_one_time_wait_before_jump_again
       resultStatus: 1
-      duration: 2.5561357
+      duration: 2.579963
       messages: 
       output: 
       stacktrace: 
@@ -871,7 +854,7 @@ MonoBehaviour:
       name: player_movement_playmodetest
       fullName: MovementTests.player_movement_playmodetest
       resultStatus: 1
-      duration: 12.745931
+      duration: 24.4292
       messages: 
       output: 
       stacktrace: 
@@ -887,7 +870,7 @@ MonoBehaviour:
       name: player_move_left_greater_than_start_position
       fullName: MovementTests.player_movement_playmodetest.player_move_left_greater_than_start_position
       resultStatus: 1
-      duration: 3.088982
+      duration: 6.215098
       messages: 
       output: 
       stacktrace: 
@@ -904,7 +887,7 @@ MonoBehaviour:
       name: player_move_right_greater_than_start_position
       fullName: MovementTests.player_movement_playmodetest.player_move_right_greater_than_start_position
       resultStatus: 1
-      duration: 3.2545238
+      duration: 6.0547123
       messages: 
       output: 
       stacktrace: 
@@ -921,7 +904,7 @@ MonoBehaviour:
       name: player_move_right_or_left_different_from_start_position
       fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position
       resultStatus: 1
-      duration: 6.39561
+      duration: 12.143492
       messages: 
       output: 
       stacktrace: 
@@ -937,7 +920,7 @@ MonoBehaviour:
       name: player_move_right_or_left_different_from_start_position(1.0f)
       fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position(1.0f)
       resultStatus: 1
-      duration: 3.181069
+      duration: 6.0620074
       messages: 
       output: 
       stacktrace: 
@@ -954,7 +937,7 @@ MonoBehaviour:
       name: player_move_right_or_left_different_from_start_position(-1.0f)
       fullName: MovementTests.player_movement_playmodetest.player_move_right_or_left_different_from_start_position(-1.0f)
       resultStatus: 1
-      duration: 3.2009392
+      duration: 6.0717354
       messages: 
       output: 
       stacktrace: 
@@ -1016,13 +999,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayModeTest.dll/[PlayModeTest][play_test_script][suite]
-    m_ResultText: player_take_one_damage_in_one_time (4.418s)
+    m_ResultText: player_movement_playmodetest (24.429s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2eac80ff
-      m_LastClickedID: -8344530
-      m_ExpandedIDs: 8c1fc688cf292f8cb1c7829ab01868af9741aee74172c1eb34f02ef62eac80fff3f2a70b0dd4460c7a2c580c720ad935cd9c155cffffff7f
+      scrollPos: {x: 0, y: 47}
+      m_SelectedIDs: cd9c155c
+      m_LastClickedID: 1544920269
+      m_ExpandedIDs: 8c1fc688cf292f8cb1c7829ab01868af9741aee74172c1eb34f02ef62eac80fff3f2a70b0dd4460c7a2c580c720ad935cd9c155cd6da2a66ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1057,7 +1040,7 @@ MonoBehaviour:
       name: TestDriven2DProject
       fullName: TestDriven2DProject
       resultStatus: 1
-      duration: 0.153922
+      duration: 0.1408936
       messages: 
       output: 
       stacktrace: 
@@ -1073,7 +1056,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.1177415
+      duration: 0.1108138
       messages: 
       output: 
       stacktrace: 
@@ -1082,14 +1065,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1020
+      parentId: 1000
       parentUniqueId: '[TestDriven2DProject][suite]'
     - id: 1045
       uniqueId: Tests.dll/[Tests][CombatTests][suite]
       name: CombatTests
       fullName: CombatTests
       resultStatus: 1
-      duration: 0.3523888
+      duration: 0.3912795
       messages: 
       output: 
       stacktrace: 
@@ -1100,12 +1083,12 @@ MonoBehaviour:
       categories: []
       parentId: 1043
       parentUniqueId: '[Tests.dll][suite]'
-    - id: 1037
+    - id: 1020
       uniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
       name: health_edit_mode_test
       fullName: CombatTests.health_edit_mode_test
       resultStatus: 1
-      duration: 0.3491281
+      duration: 0.3906448
       messages: 
       output: 
       stacktrace: 
@@ -1116,12 +1099,12 @@ MonoBehaviour:
       categories: []
       parentId: 1045
       parentUniqueId: Tests.dll/[Tests][CombatTests][suite]
-    - id: 1027
+    - id: 1030
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0][suite]
       name: take_damage_current_health_not_less_than_0
       fullName: CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0
       resultStatus: 1
-      duration: 0.3081797
+      duration: 0.2457404
       messages: 
       output: 
       stacktrace: 
@@ -1130,14 +1113,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1017
+      parentId: 1020
       parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
-    - id: 1023
+    - id: 1026
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/take_damage_current_health_not_less_than_0/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0(1)]
       name: take_damage_current_health_not_less_than_0(1)
       fullName: CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0(1)
       resultStatus: 1
-      duration: 0.2995328
+      duration: 0.2265733
       messages: 
       output: 
       stacktrace: 
@@ -1147,14 +1130,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1027
+      parentId: 1030
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0][suite]
-    - id: 1024
+    - id: 1027
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/take_damage_current_health_not_less_than_0/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0(2)]
       name: take_damage_current_health_not_less_than_0(2)
       fullName: CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0(2)
       resultStatus: 1
-      duration: 0.0010205
+      duration: 0.0014497
       messages: 
       output: 
       stacktrace: 
@@ -1164,14 +1147,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1027
+      parentId: 1030
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0][suite]
-    - id: 1025
+    - id: 1028
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/take_damage_current_health_not_less_than_0/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0(3)]
       name: take_damage_current_health_not_less_than_0(3)
       fullName: CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0(3)
       resultStatus: 1
-      duration: 0.0002471
+      duration: 0.0004383
       messages: 
       output: 
       stacktrace: 
@@ -1181,14 +1164,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1027
+      parentId: 1030
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0][suite]
-    - id: 1026
+    - id: 1029
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/take_damage_current_health_not_less_than_0/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0(5)]
       name: take_damage_current_health_not_less_than_0(5)
       fullName: CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0(5)
       resultStatus: 1
-      duration: 0.0002155
+      duration: 0.0003593
       messages: 
       output: 
       stacktrace: 
@@ -1198,14 +1181,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1027
+      parentId: 1030
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_current_health_not_less_than_0][suite]
-    - id: 1042
+    - id: 1025
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health][suite]
       name: take_damage_not_equal_to_max_health
       fullName: CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health
       resultStatus: 1
-      duration: 0.0144244
+      duration: 0.1096641
       messages: 
       output: 
       stacktrace: 
@@ -1214,14 +1197,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1037
+      parentId: 1020
       parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
-    - id: 1038
+    - id: 1021
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/take_damage_not_equal_to_max_health/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health(1)]
       name: take_damage_not_equal_to_max_health(1)
       fullName: CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health(1)
       resultStatus: 1
-      duration: 0.0056814
+      duration: 0.0312322
       messages: 
       output: 
       stacktrace: 
@@ -1231,14 +1214,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1042
+      parentId: 1025
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health][suite]
-    - id: 1039
+    - id: 1022
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/take_damage_not_equal_to_max_health/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health(2)]
       name: take_damage_not_equal_to_max_health(2)
       fullName: CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health(2)
       resultStatus: 1
-      duration: 0.0004678
+      duration: 0.0352027
       messages: 
       output: 
       stacktrace: 
@@ -1248,14 +1231,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1042
+      parentId: 1025
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health][suite]
-    - id: 1040
+    - id: 1023
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/take_damage_not_equal_to_max_health/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health(3)]
       name: take_damage_not_equal_to_max_health(3)
       fullName: CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health(3)
       resultStatus: 1
-      duration: 0.000261
+      duration: 0.0084796
       messages: 
       output: 
       stacktrace: 
@@ -1265,14 +1248,182 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1042
+      parentId: 1025
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health][suite]
-    - id: 1041
+    - id: 1024
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/take_damage_not_equal_to_max_health/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health(5)]
       name: take_damage_not_equal_to_max_health(5)
       fullName: CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health(5)
       resultStatus: 1
-      duration: 0.0002351
+      duration: 0.0024046
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health][suite]
+    - id: 1038
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_without_triggering_dead_event]
+      name: take_damage_without_triggering_dead_event
+      fullName: CombatTests.health_edit_mode_test.take_damage_without_triggering_dead_event
+      resultStatus: 1
+      duration: 0.0016003
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
+    - id: 1036
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
+      name: trigger_event_when_damage_taken_many_time
+      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time
+      resultStatus: 1
+      duration: 0.01591
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1020
+      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
+    - id: 1032
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_event_when_damage_taken_many_time/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(1)]
+      name: trigger_event_when_damage_taken_many_time(1)
+      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(1)
+      resultStatus: 1
+      duration: 0.0025045
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1036
+      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
+    - id: 1033
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_event_when_damage_taken_many_time/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(2)]
+      name: trigger_event_when_damage_taken_many_time(2)
+      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(2)
+      resultStatus: 1
+      duration: 0.0004404
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1036
+      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
+    - id: 1034
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_event_when_damage_taken_many_time/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(3)]
+      name: trigger_event_when_damage_taken_many_time(3)
+      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(3)
+      resultStatus: 1
+      duration: 0.000606
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1036
+      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
+    - id: 1035
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_event_when_damage_taken_many_time/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(5)]
+      name: trigger_event_when_damage_taken_many_time(5)
+      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(5)
+      resultStatus: 1
+      duration: 0.0003037
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1036
+      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
+    - id: 1037
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_fatally_damaged]
+      name: trigger_event_when_fatally_damaged
+      fullName: CombatTests.health_edit_mode_test.trigger_event_when_fatally_damaged
+      resultStatus: 1
+      duration: 0.0007029
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
+    - id: 1031
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_take_damage_one_time]
+      name: trigger_event_when_take_damage_one_time
+      fullName: CombatTests.health_edit_mode_test.trigger_event_when_take_damage_one_time
+      resultStatus: 1
+      duration: 0.0004452
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
+    - id: 1042
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times][suite]
+      name: trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times
+      fullName: CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times
+      resultStatus: 1
+      duration: 0.0088432
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1020
+      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
+    - id: 1039
+      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(2)]
+      name: trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(2)
+      fullName: CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(2)
+      resultStatus: 1
+      duration: 0.0016465
       messages: 
       output: 
       stacktrace: 
@@ -1283,181 +1434,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1042
-      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_not_equal_to_max_health][suite]
-    - id: 1055
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.take_damage_without_triggering_dead_event]
-      name: take_damage_without_triggering_dead_event
-      fullName: CombatTests.health_edit_mode_test.take_damage_without_triggering_dead_event
-      resultStatus: 1
-      duration: 0.0005499
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1037
-      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
-    - id: 1033
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
-      name: trigger_event_when_damage_taken_many_time
-      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time
-      resultStatus: 1
-      duration: 0.0079713
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1017
-      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
-    - id: 1029
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_event_when_damage_taken_many_time/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(1)]
-      name: trigger_event_when_damage_taken_many_time(1)
-      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(1)
-      resultStatus: 1
-      duration: 0.0011989
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1033
-      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
-    - id: 1030
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_event_when_damage_taken_many_time/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(2)]
-      name: trigger_event_when_damage_taken_many_time(2)
-      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(2)
-      resultStatus: 1
-      duration: 0.0003339
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1033
-      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
-    - id: 1031
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_event_when_damage_taken_many_time/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(3)]
-      name: trigger_event_when_damage_taken_many_time(3)
-      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(3)
-      resultStatus: 1
-      duration: 0.0002477
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1033
-      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
-    - id: 1032
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_event_when_damage_taken_many_time/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(5)]
-      name: trigger_event_when_damage_taken_many_time(5)
-      fullName: CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time(5)
-      resultStatus: 1
-      duration: 0.0002633
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1033
-      parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_damage_taken_many_time][suite]
-    - id: 1034
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_fatally_damaged]
-      name: trigger_event_when_fatally_damaged
-      fullName: CombatTests.health_edit_mode_test.trigger_event_when_fatally_damaged
-      resultStatus: 1
-      duration: 0.0005694
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
-    - id: 1028
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_event_when_take_damage_one_time]
-      name: trigger_event_when_take_damage_one_time
-      fullName: CombatTests.health_edit_mode_test.trigger_event_when_take_damage_one_time
-      resultStatus: 1
-      duration: 0.0003959
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
-    - id: 1039
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times][suite]
-      name: trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times
-      fullName: CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times
-      resultStatus: 1
-      duration: 0.0064408
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1017
-      parentUniqueId: Tests.dll/CombatTests/[Tests][CombatTests.health_edit_mode_test][suite]
-    - id: 1036
-      uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(2)]
-      name: trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(2)
-      fullName: CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(2)
-      resultStatus: 1
-      duration: 0.0009574
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1039
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times][suite]
-    - id: 1037
+    - id: 1040
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(3)]
       name: trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(3)
       fullName: CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(3)
       resultStatus: 1
-      duration: 0.0003001
+      duration: 0.0004344
       messages: 
       output: 
       stacktrace: 
@@ -1467,14 +1450,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1039
+      parentId: 1042
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times][suite]
-    - id: 1038
+    - id: 1041
       uniqueId: Tests.dll/CombatTests/health_edit_mode_test/trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(5)]
       name: trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(5)
       fullName: CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times(5)
       resultStatus: 1
-      duration: 0.0002341
+      duration: 0.0002515
       messages: 
       output: 
       stacktrace: 
@@ -1484,14 +1467,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1039
+      parentId: 1042
       parentUniqueId: Tests.dll/CombatTests/health_edit_mode_test/[Tests][CombatTests.health_edit_mode_test.trigger_take_damage_event_one_time_despite_fatal_damage_taken_many_times][suite]
     - id: 1001
       uniqueId: Tests.dll/[Tests][first_edit_test_script][suite]
       name: first_edit_test_script
       fullName: first_edit_test_script
       resultStatus: 1
-      duration: 0.0179558
+      duration: 0.0458147
       messages: 
       output: 
       stacktrace: 
@@ -1500,14 +1483,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1006
-      parentUniqueId: '[Tests][C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/Tests.dll][suite]'
+      parentId: 1043
+      parentUniqueId: '[Tests.dll][suite]'
     - id: 1002
       uniqueId: Tests.dll/first_edit_test_script/[Tests][first_edit_test_script.first_edit_test_scriptSimplePasses]
       name: first_edit_test_scriptSimplePasses
       fullName: first_edit_test_script.first_edit_test_scriptSimplePasses
       resultStatus: 1
-      duration: 0.0002283
+      duration: 0.0006281
       messages: 
       output: 
       stacktrace: 
@@ -1524,7 +1507,7 @@ MonoBehaviour:
       name: first_edit_test_scriptWithEnumeratorPasses
       fullName: first_edit_test_script.first_edit_test_scriptWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0118873
+      duration: 0.0302898
       messages: 
       output: 
       stacktrace: 
@@ -1536,12 +1519,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][first_edit_test_script][suite]
-    - id: 1011
+    - id: 1044
       uniqueId: Tests.dll/[Tests][MovementTests][suite]
       name: MovementTests
       fullName: MovementTests
       resultStatus: 1
-      duration: 0.1172336
+      duration: 0.1103193
       messages: 
       output: 
       stacktrace: 
@@ -1550,14 +1533,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1010
-      parentUniqueId: '[Tests][C:/Users/Ayxan/Desktop/CodeAcedmy/TestDriven2DProject/TestDriven2DProject/Library/ScriptAssemblies/Tests.dll][suite]'
+      parentId: 1043
+      parentUniqueId: '[Tests.dll][suite]'
     - id: 1004
       uniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_flip][suite]
       name: player_flip
       fullName: MovementTests.player_flip
       resultStatus: 1
-      duration: 0.0235643
+      duration: 0.0713443
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -1571,14 +1554,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1015
+      parentId: 1044
       parentUniqueId: Tests.dll/[Tests][MovementTests][suite]
     - id: 1010
       uniqueId: Tests.dll/MovementTests/player_flip/[Tests][MovementTests.player_flip.player_scale_x_flip_when_value_become_zero][suite]
       name: player_scale_x_flip_when_value_become_zero
       fullName: MovementTests.player_flip.player_scale_x_flip_when_value_become_zero
       resultStatus: 1
-      duration: 0.0095
+      duration: 0.0330751
       messages: 
       output: 
       stacktrace: 
@@ -1594,7 +1577,7 @@ MonoBehaviour:
       name: player_scale_x_flip_when_value_become_zero(1.0f)
       fullName: MovementTests.player_flip.player_scale_x_flip_when_value_become_zero(1.0f)
       resultStatus: 1
-      duration: 0.0073088
+      duration: 0.0239326
       messages: 
       output: 
       stacktrace: 
@@ -1611,7 +1594,7 @@ MonoBehaviour:
       name: player_scale_x_flip_when_value_become_zero(-1.0f)
       fullName: MovementTests.player_flip.player_scale_x_flip_when_value_become_zero(-1.0f)
       resultStatus: 1
-      duration: 0.000943
+      duration: 0.0036928
       messages: 
       output: 
       stacktrace: 
@@ -1628,7 +1611,7 @@ MonoBehaviour:
       name: player_scale_x_flip_with_one_or_minus_one
       fullName: MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one
       resultStatus: 1
-      duration: 0.0068155
+      duration: 0.0257592
       messages: 
       output: 
       stacktrace: 
@@ -1644,7 +1627,7 @@ MonoBehaviour:
       name: player_scale_x_flip_with_one_or_minus_one(1.0f)
       fullName: MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one(1.0f)
       resultStatus: 1
-      duration: 0.0010252
+      duration: 0.0038911
       messages: 
       output: 
       stacktrace: 
@@ -1661,7 +1644,7 @@ MonoBehaviour:
       name: player_scale_x_flip_with_one_or_minus_one(-1.0f)
       fullName: MovementTests.player_flip.player_scale_x_flip_with_one_or_minus_one(-1.0f)
       resultStatus: 1
-      duration: 0.000648
+      duration: 0.0018051
       messages: 
       output: 
       stacktrace: 
@@ -1678,7 +1661,7 @@ MonoBehaviour:
       name: player_jump
       fullName: MovementTests.player_jump
       resultStatus: 1
-      duration: 0.1162443
+      duration: 0.018402
       messages: 
       output: 
       stacktrace: 
@@ -1694,7 +1677,7 @@ MonoBehaviour:
       name: player_cant_jump_one_time_when_canJump_false
       fullName: MovementTests.player_jump.player_cant_jump_one_time_when_canJump_false
       resultStatus: 1
-      duration: 0.0007806
+      duration: 0.0136882
       messages: 
       output: 
       stacktrace: 
@@ -1711,7 +1694,7 @@ MonoBehaviour:
       name: player_jump_one_time_when_canJump_true
       fullName: MovementTests.player_jump.player_jump_one_time_when_canJump_true
       resultStatus: 1
-      duration: 0.1054487
+      duration: 0.0021043
       messages: 
       output: 
       stacktrace: 
@@ -1723,12 +1706,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1011
       parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_jump][suite]
-    - id: 1004
+    - id: 1014
       uniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
       name: player_movement
       fullName: MovementTests.player_movement
       resultStatus: 1
-      duration: 0.0438619
+      duration: 0.1094208
       messages: 
       output: 
       stacktrace: 
@@ -1737,21 +1720,33 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1011
+      parentId: 1044
       parentUniqueId: Tests.dll/[Tests][MovementTests][suite]
-    - id: 1009
+    - id: 1020
+      uniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.dont_move_when_input_value_equal_zero]
+      name: dont_move_when_input_value_equal_zero
+      fullName: MovementTests.player_movement.dont_move_when_input_value_equal_zero
+      resultStatus: 1
+      duration: 0.0992638
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
+    - id: 1019
       uniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_left_greater_than_start_position]
       name: move_10_meters_left_greater_than_start_position
       fullName: MovementTests.player_movement.move_10_meters_left_greater_than_start_position
       resultStatus: 1
-      duration: 0.0053462
+      duration: 0.2526261
       messages: 
-      output: 'Player Start Position => (0.00, 0.00, 0.00)
-
-        Player End Position
-        => (-1.90, 0.00, 0.00)
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1759,21 +1754,16 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1004
+      parentId: 1014
       parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
-    - id: 1008
+    - id: 1018
       uniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_right_greater_than_start_position]
       name: move_10_meters_right_greater_than_start_position
       fullName: MovementTests.player_movement.move_10_meters_right_greater_than_start_position
       resultStatus: 1
-      duration: 0.0032452
+      duration: 0.0016014
       messages: 
-      output: 'Player Start Position => (0.00, 0.00, 0.00)
-
-        Player End Position
-        => (1.90, 0.00, 0.00)
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1781,14 +1771,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1004
+      parentId: 1014
       parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
-    - id: 1007
+    - id: 1017
       uniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
       name: move_10_meters_right_or_left_different_from_start_position
       fullName: MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position
       resultStatus: 1
-      duration: 0.0155781
+      duration: 0.011928
       messages: 
       output: 
       stacktrace: 
@@ -1797,21 +1787,16 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1004
+      parentId: 1014
       parentUniqueId: Tests.dll/MovementTests/[Tests][MovementTests.player_movement][suite]
-    - id: 1005
+    - id: 1015
       uniqueId: Tests.dll/MovementTests/player_movement/move_10_meters_right_or_left_different_from_start_position/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position(1.0f)]
       name: move_10_meters_right_or_left_different_from_start_position(1.0f)
       fullName: MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position(1.0f)
       resultStatus: 1
-      duration: 0.0054761
+      duration: 0.0019046
       messages: 
-      output: 'Player Start Position => (0.00, 0.00, 0.00)
-
-        Player End Position
-        => (1.36, 0.00, 0.00)
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1819,21 +1804,16 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1007
+      parentId: 1017
       parentUniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
-    - id: 1006
+    - id: 1016
       uniqueId: Tests.dll/MovementTests/player_movement/move_10_meters_right_or_left_different_from_start_position/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position(-1.0f)]
       name: move_10_meters_right_or_left_different_from_start_position(-1.0f)
       fullName: MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position(-1.0f)
       resultStatus: 1
-      duration: 0.0033211
+      duration: 0.0013049
       messages: 
-      output: 'Player Start Position => (0.00, 0.00, 0.00)
-
-        Player End Position
-        => (-1.36, 0.00, 0.00)
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1841,14 +1821,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1007
+      parentId: 1017
       parentUniqueId: Tests.dll/MovementTests/player_movement/[Tests][MovementTests.player_movement.move_10_meters_right_or_left_different_from_start_position][suite]
-    m_ResultText: player_jump_one_time_when_canJump_true (0.105s)
+    m_ResultText: dont_move_when_input_value_equal_zero (0.099s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5169bb12
-      m_LastClickedID: 314272081
+      scrollPos: {x: 0, y: 191}
+      m_SelectedIDs: 3aadf683
+      m_LastClickedID: -2080985798
       m_ExpandedIDs: 73253081bdd66586c2a700a18b3406ac29b4c6ac78ba59b9915316c73b0a6ce0e557abf7fb4312f80dd4460cc2aed10c3042e90c700311138f82f1138e78bc20bea02a55dbaa0e5836b39d5ab9e28373ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1952,9 +1932,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 7.2000003
-    y: 504.80002
+    y: 441.6
     width: 1143
-    height: 271.40002
+    height: 334.60004
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1972,22 +1952,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_GameFolder/Scripts/Concretes/Movements
+    - Assets/_GameFolder/ScriptableObjects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_GameFolder/Scripts/Concretes/Movements
+  - Assets/_GameFolder/ScriptableObjects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Ayxan\Desktop\CodeAcedmy\TestDriven2DProject\TestDriven2DProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 236.59998}
-    m_SelectedIDs: 2c650000
-    m_LastClickedID: 25900
-    m_ExpandedIDs: 00000000c6640000c8640000ca640000cc640000ce640000d0640000d2640000d4640000d6640000d8640000da640000dc640000de64000000ca9a3b
+    scrollPos: {x: 0, y: 175}
+    m_SelectedIDs: 12650000
+    m_LastClickedID: 25874
+    m_ExpandedIDs: 00000000ec640000ee640000f0640000f2640000f4640000f6640000f8640000fa640000fc640000fe64000000650000026500000465000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2015,7 +1995,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c6640000c8640000ca640000cc640000ce640000d0640000d2640000d4640000d6640000d8640000da640000dc640000de640000
+    m_ExpandedIDs: 00000000ec640000ee640000f0640000f2640000f4640000f6640000f8640000fa640000fc640000fe640000006500000265000004650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2105,7 +2085,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 4148
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -2134,8 +2114,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 7.2000003
     y: 80.8
-    width: 185.4
-    height: 403
+    width: 259.8
+    height: 339.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2143,9 +2123,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 34100000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 08fbffff
+      m_ExpandedIDs: 86e1ffffc8e1ffffc0e3ffffbce4fffffee4ffff7ee6ffffb6e9fffff8e9fffff0ebffff24f0ffff66f0ffffe6f1ffffe4f2ffff26f3ffff20f5ffffc8f5ffffe4f6ffff00f8ffff38f9fffffefaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2189,10 +2169,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 193.6
+    x: 268
     y: 80.8
-    width: 955.6
-    height: 403
+    width: 881.2
+    height: 339.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2416,9 +2396,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.083224975, y: -0.010429785, z: -0.02049254}
+    m_Target: {x: 1.1490381, y: -0.68427724, z: 0.003199935}
     speed: 2
-    m_Value: {x: 0.083224975, y: -0.010429785, z: -0.02049254}
+    m_Value: {x: 1.1490381, y: -0.68427724, z: 0.003199935}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2469,9 +2449,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.1836257
+    m_Target: 1.7442827
     speed: 2
-    m_Value: 4.1836257
+    m_Value: 1.7442827
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2516,10 +2496,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 193.6
-    y: 80.8
-    width: 955.6
-    height: 403
+    x: -25339.201
+    y: -25569.6
+    width: 881.2
+    height: 339.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2530,7 +2510,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 955.6, y: 382}
+  m_TargetSize: {x: 881.2, y: 318.8}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -2545,10 +2525,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -382.24
-    m_HBaseRangeMax: 382.24
-    m_VBaseRangeMin: -152.8
-    m_VBaseRangeMax: 152.8
+    m_HBaseRangeMin: -352.48
+    m_HBaseRangeMax: 352.48
+    m_VBaseRangeMin: -127.52
+    m_VBaseRangeMax: 127.52
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -2566,23 +2546,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 955.6
-      height: 382
+      width: 881.2
+      height: 318.8
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 477.8, y: 191}
+    m_Translation: {x: 440.6, y: 159.4}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -477.8
-      y: -191
-      width: 955.6
-      height: 382
+      x: -440.6
+      y: -159.4
+      width: 881.2
+      height: 318.8
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1194.5, y: 503.75}
+  m_LastWindowPixelSize: {x: 1101.5, y: 424.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000

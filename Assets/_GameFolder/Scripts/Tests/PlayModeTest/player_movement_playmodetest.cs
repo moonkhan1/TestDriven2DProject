@@ -37,42 +37,55 @@ namespace MovementTests
 
             //Method 2
             // yield return LoadPlayerModeTestScene();
-           
-            Vector3 startPosition = _playerController.transform.position;
+            float startPositionX = _playerController.transform.position.x;
+            yield return new WaitForSeconds(3f);
 
+            Vector3 startPosition = new Vector3(startPositionX, _playerController.transform.position.y, 
+            _playerController.transform.position.z);
+            _playerController.transform.position = startPosition;
             // Act
             _playerController.InputReader.Horizontal.Returns(inputValue);
             yield return new WaitForSeconds(3f);
             // Assert
-            Assert.AreNotEqual(startPosition, _playerController.transform.position);
+            Assert.AreNotEqual(startPositionX, _playerController.transform.position.x);
         }
 
         [UnityTest]
         public IEnumerator player_move_right_greater_than_start_position()
         {
             // Arrange
-            Vector3 startPosition = _playerController.transform.position;
+            float startPositionX = _playerController.transform.position.x;
+            yield return new WaitForSeconds(3f);
+
+            Vector3 startPosition = new Vector3(startPositionX, _playerController.transform.position.y, 
+            _playerController.transform.position.z);
+            _playerController.transform.position = startPosition;
 
             //Act
             _playerController.InputReader.Horizontal.Returns(1f);
             yield return new WaitForSeconds(3f);
 
             //Assert
-            Assert.Greater(_playerController.transform.position.x, startPosition.x);
+            Assert.Greater(_playerController.transform.position.x, startPositionX);
         }
 
          [UnityTest]
         public IEnumerator player_move_left_greater_than_start_position()
         {
             // Arrange
-            Vector3 startPosition = _playerController.transform.position;
+            float startPositionX = _playerController.transform.position.x;
+            yield return new WaitForSeconds(3f);
+
+            Vector3 startPosition = new Vector3(startPositionX, _playerController.transform.position.y, 
+            _playerController.transform.position.z);
+            _playerController.transform.position = startPosition;
 
             //Act
             _playerController.InputReader.Horizontal.Returns(-1f);
             yield return new WaitForSeconds(3f);
 
             //Assert
-            Assert.Less(_playerController.transform.position.x, startPosition.x);
+            Assert.Less(_playerController.transform.position.x, startPositionX);
         }
     }
 }

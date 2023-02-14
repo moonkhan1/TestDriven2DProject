@@ -5,6 +5,9 @@ using UnityEngine;
 using NSubstitute;
 using TestDriven.Abstracts.Stats;
 using TestDriven.EditTests.Helpers;
+using TestDriven.Concretes.Managers;
+using TestDriven.Abstracts.Movements;
+using TestDriven.Abstracts.Managers;
 
 namespace MovementTests
 {
@@ -18,10 +21,10 @@ namespace MovementTests
             return playerController;
         }
 
-        private IMover GetMoveWithTransform(IPlayerController playerController)
+        private IMovementService GetMovementManager(IPlayerController playerController, IMoverDal moverDal)
         {
-            IMover mover = new MoveWithTransform(playerController);
-            return mover;
+            var moveManager = new PlayerMoveManager(playerController, moverDal );
+            return moveManager;
         }
 
 
@@ -33,19 +36,19 @@ namespace MovementTests
         {
             // Arrange
             var playerController = GetPlayer();
-            var mover = GetMoveWithTransform(playerController);
-            Vector3 startPosition = playerController.transform.position;
+            var moveDal = Substitute.For<IMoverDal>();
+            var movementManager = GetMovementManager(playerController,moveDal);
             // Act
             playerController.InputReader.Horizontal.Returns(horizontalInputValue);
+            playerController.Stats.MoveSpeed.Returns(5f);
+            float inputValue =  playerController.InputReader.Horizontal * playerController.Stats.MoveSpeed * Time.deltaTime;
             for (int i = 0; i <= 10; i++)
             {
-                mover.TakeInputAction();
-                mover.MoveAction();
+                movementManager.Tick();//input
+                movementManager.FixedTick(); //action
             }
-            Debug.Log("Player Start Position => " + startPosition);
-            Debug.Log("Player End Position => " + playerController.transform.position);
             // Assert
-            Assert.AreNotEqual(startPosition, playerController.transform.position);
+            moveDal.Received().MoveAction(inputValue);
         }
         [Test]
 
@@ -54,19 +57,20 @@ namespace MovementTests
         {
             // Arrange
             var playerController = GetPlayer();
-            var mover = GetMoveWithTransform(playerController);
-            Vector3 startPosition = playerController.transform.position;
+            var moveDal = Substitute.For<IMoverDal>();
+            var movementManager = GetMovementManager(playerController,moveDal);
             // Act
             playerController.InputReader.Horizontal.Returns(1f);
+            playerController.Stats.MoveSpeed.Returns(5f);
+            float inputValue =  playerController.InputReader.Horizontal * playerController.Stats.MoveSpeed * Time.deltaTime;
             for (int i = 0; i <= 10; i++)
             {
-                mover.TakeInputAction();
-                mover.MoveAction();
+                movementManager.Tick();//input
+                movementManager.FixedTick(); //action
             }
-            Debug.Log("Player Start Position => " + startPosition);
-            Debug.Log("Player End Position => " + playerController.transform.position);
+
             // Assert
-            Assert.Greater(playerController.transform.position.x, startPosition.x);
+            moveDal.Received().MoveAction(inputValue);
         }
 
 
@@ -76,19 +80,41 @@ namespace MovementTests
         {
             // Arrange
             var playerController = GetPlayer();
-            var mover = GetMoveWithTransform(playerController);
-            Vector3 startPosition = playerController.transform.position;
+            var moveDal = Substitute.For<IMoverDal>();
+            var movementManager = GetMovementManager(playerController,moveDal);
             // Act
             playerController.InputReader.Horizontal.Returns(-1f);
+            playerController.Stats.MoveSpeed.Returns(5f);
+            float inputValue =  playerController.InputReader.Horizontal * playerController.Stats.MoveSpeed * Time.deltaTime;
             for (int i = 0; i <= 10; i++)
             {
-                mover.TakeInputAction();
-                mover.MoveAction();
+               movementManager.Tick();//input
+                movementManager.FixedTick(); //action
             }
-            Debug.Log("Player Start Position => " + startPosition);
-            Debug.Log("Player End Position => " + playerController.transform.position);
+
             // Assert
-            Assert.Less(playerController.transform.position.x, startPosition.x);
+            moveDal.Received().MoveAction(inputValue);
+        }
+
+        [Test]
+        public void dont_move_when_input_value_equal_zero()
+        {
+            // Arrange
+            var playerController = GetPlayer();
+            var moveDal = Substitute.For<IMoverDal>();
+            var movementManager = GetMovementManager(playerController,moveDal);
+            // Act
+            playerController.InputReader.Horizontal.Returns(0f);
+            playerController.Stats.MoveSpeed.Returns(5f);
+            float inputValue =  playerController.InputReader.Horizontal * playerController.Stats.MoveSpeed * Time.deltaTime;
+            for (int i = 0; i <= 10; i++)
+            {
+               movementManager.Tick();//input
+                movementManager.FixedTick(); //action
+            }
+
+            // Assert
+            moveDal.DidNotReceive().MoveAction(inputValue);
         }
     }
 }

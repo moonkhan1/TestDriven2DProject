@@ -15,9 +15,9 @@ namespace TestDriven.Inputs
         {
             _input = new GameInputActions();
 
-            _input.Enable();
             _input.Player.Move.performed += HandleMoveAction;
             _input.Player.Move.canceled += HandleMoveAction;
+            _input.Enable();
         }
 
         private void HandleMoveAction(InputAction.CallbackContext context)
