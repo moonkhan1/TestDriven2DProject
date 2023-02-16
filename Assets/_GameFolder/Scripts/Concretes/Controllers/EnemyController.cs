@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TestDriven.Abstracts.Managers;
 using TestDriven.Abstracts.Movements;
+using TestDriven.Concretes.Managers;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour, IEnemyController
@@ -9,12 +11,21 @@ public class EnemyController : MonoBehaviour, IEnemyController
     public IAttacker Attacker {get; set;}
     public IEnemyStats Stats => _stats;
     public IHealth Health {get; private set;}
-    public IMoverDal Mover {get; private set;}
-    public bool IsEnemyDirectedToRight {get; private set;}
+    public IMovementService MoveManager {get; private set;}
+    public bool IsEnemyDirectedToRight {get; set;}
 
     private void Awake() {
         Attacker = new Attacker(Stats);
         Health = new Health(Stats);
+        MoveManager = new EnemyMovementManager(this, new MoveWithTransformDal(transform));
+    }
+    void Update()
+    {
+        MoveManager.Tick();
+    }
+    void FixedUpdate() 
+    {
+        MoveManager.FixedTick();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
